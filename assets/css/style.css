@@ -15,6 +15,9 @@
 
 /* global styles */
 
+body {
+    background-color: var(--primary-background-colour);
+}
 
 /* nav bar styles */
 
