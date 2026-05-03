@@ -42,3 +42,11 @@ body {
 
 
 /* media queries */
+
+
+/* test styles - TO BE DELETED */
+
+.test {
+    background-color: black;
+    border: 1px solid red;
+}

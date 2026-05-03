@@ -25,9 +25,8 @@
     <script src="script.js" defer></script>
   </head>
 
-
-  <body>
-
+  <!-- classes on body set to work with mt-auto on footer to ensure it always tays at the bottom of the page - taken from boardwalk-games code -->
+  <body class="d-flex flex-column min-vh-100">
     <!-- Navbar begins with bootstrap and modified to suit site -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
@@ -46,7 +45,9 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+              <a class="nav-link active" aria-current="page" href="#"
+                >Dashboard</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">My workouts</a>
@@ -60,28 +61,48 @@
     </nav>
 
     <!-- main section -->
-     <main>
-
-     </main>
-
+    <main>
+      <section id="workouts" class="container">
+        <div class="row">
+            <div class="col-21 col-md-6 col-lg-9 test">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, molestias. Ea corporis adipisci nostrum officia eum alias quis esse incidunt illum nemo totam minus facilis, dicta assumenda ratione quasi autem.</p>
+            </div>
+            <div class="col-21 col-md-6 col-lg-3 test">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, molestias. Ea corporis adipisci nostrum officia eum alias quis esse incidunt illum nemo totam minus facilis, dicta assumenda ratione quasi autem.</p>
+            </div>
+        </div>
+      </section>
+      <section id="workouts" class="container">
+        <div class="row test">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, molestias. Ea corporis adipisci nostrum officia eum alias quis esse incidunt illum nemo totam minus facilis, dicta assumenda ratione quasi autem.</p>
+        </div>
+      </section>
+    </main>
 
     <!-- footer -->
     <footer id="footer" class="mt-auto">
-        <div class="container">
-            <div class="row">
-                <!-- link to social media sites -->
-                <div id="socials" class="col text-end">
-                    <p>
-                        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-                        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-                    </p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <!-- link to social media sites -->
+          <div id="socials" class="col text-centre">
+            <p>
+              <a href="https://facebook.com" target="_blank"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+              <a href="https://instagram.com" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://twitter.com" target="_blank"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="https://www.tiktok.com" target="_blank"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+            </p>
+          </div>
         </div>
+      </div>
     </footer>
-
 
     <!-- Font awesome -->
     <script
