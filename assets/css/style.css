@@ -1,0 +1,41 @@
+
+/* google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* css variables */
+
+:root {
+    --primary-font: "Hind", sans-serif;
+    --secondary-font: "Montserrat", serif;
+    --primary-colour: #86E8EA; /* Electric Aqua */
+    --secondary-colour: #495867; /* blue slate */
+    --primary-background-colour: #ECE9EC; /* Platinum*/ 
+    --highlight: #B02E0C; /* Oxidised iron */ 
+    --secondary-highlight: #B0D50B /* yELLOW green */
+}
+
+/* global styles */
+
+
+/* nav bar styles */
+
+
+/* footer styles */
+
+
+
+/* dashbboard  page styles */
+
+
+
+/* progress page styles */
+
+
+/* charts page styles */
+
+
+
+
+/* script styles */
+
+
+/* media queries */
