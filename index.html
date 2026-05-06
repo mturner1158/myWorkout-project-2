@@ -29,9 +29,9 @@
   <!-- classes on body set to work with mt-auto on footer to ensure it always tays at the bottom of the page - taken from boardwalk-games code -->
   <body class="d-flex flex-column min-vh-100">
     <!-- Navbar begins with bootstrap and modified to suit site -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">MyWorkout</a>
+        <a id="logo" class="navbar-brand" href="#">MyWorkout</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -73,26 +73,55 @@
               <div id="new-workout-card" class="workout-tile">
                 <p>Use the form below to submit your latest workout</p>
 
-                <form action="https://formdump.codeinstitute.net" method="POST" id="new-workout-form"> <!-- remove link for form submission -->
-                  <input type="text">
-                  <input type="text">
-                  <input type="text">
+                <form
+                  action="https://formdump.codeinstitute.net"
+                  method="POST"
+                  id="new-workout-form"
+                >
+                  <!-- remove link for form submission -->
+                  <input type="text" />
+                  <input type="text" />
+                  <input type="text" />
                 </form>
               </div>
             </div>
           </div>
           <!-- area containing stats on previous workouts -->
-          <div class="col-21 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4">
             <h1>See what you've done!</h1>
             <p>Below are a record of all your logged workouts</p>
+            <p>X workouts this week</p>
+            <p>X workouts this week</p>
+            <p>X workouts this week</p>
+            <p>X workouts this week</p>
           </div>
         </div>
       </section>
 
       <!-- area for previous exercises that have been done -->
       <section id="past-exercises" class="container">
-        <div class="row">
-          <h1>Here are some of your recent exercises</h1>
+        <h1>Here are some of your recent exercises...</h1>
+        <div class="tile-display row g-1">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="exercise-tile">
+              <p>test</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="exercise-tile">
+              <p>test</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="exercise-tile">
+              <p>test</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="exercise-tile">
+              <p>test</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -102,7 +131,7 @@
       <div class="container">
         <div class="row">
           <!-- link to social media sites -->
-          <div id="socials" class="col text-centre">
+          <div id="socials" class="col text-end">
             <p>
               <a href="https://facebook.com" target="_blank"
                 ><i class="fa-brands fa-square-facebook"></i

@@ -29,19 +29,38 @@ h1, h2, h3 {
     font-family: var(--secondary-font);
 }
 
-/* nav bar styles */
-
-.navbar {
-    box-shadow: 0 2px 4px 0 grey;
+h1 {
+    text-align: center;
 }
 
-.nav-item {
+/* nav bar styles */
+
+
+#navbar {
+    font-family: var(--secondary-font);
+    box-shadow: 0 2px 4px 0 grey;
     color: var(--primary-colour);
+}
+
+#logo {
+    font-size: x-large;
+    color: var(--secondary-colour);
 }
 
 /* footer styles */
 
+#footer {
+    background-color:  #f8f9fa;
+    box-shadow: 0 -2px 4px 0 grey;
+    height: 2.5rem;
+    padding-top: 10px;
+}
 
+#socials a {
+    color: var(--secondary-colour);
+    font-size: 1.2rem;
+    padding-left: 4px;
+}
 
 /* dashbboard  page styles */
 
@@ -51,6 +70,20 @@ h1, h2, h3 {
     border-radius: 10px;
     padding: 5px;
     box-shadow: 0 2px 4px 0 var(--primary-colour), 0 3px 10px 0 var(--primary-colour);
+    height: 400px;
+}
+
+
+.tile-display {
+    padding: 10px;
+}
+
+.exercise-tile {
+    background-color: white;
+    border: 1px solid var(--secondary-colour);
+    border-radius: 10px;
+    padding: 5px;
+    height: 200px;
 }
 
 
