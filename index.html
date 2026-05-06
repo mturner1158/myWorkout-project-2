@@ -9,7 +9,7 @@
     <title>MyWorkout | Dashboard</title>
 
     <!-- favicon from freepik on flaticon-->
-    <link rel="icon" href="assets/images/favicon.png"> 
+    <link rel="icon" href="assets/images/favicon.png" />
 
     <!-- bootstrap css -->
     <link
@@ -65,21 +65,34 @@
     <main>
       <section id="workouts" class="container">
         <div class="row">
-            <div class="col-21 col-md-6 col-lg-8 test">
-                <div id="new-workout-card" class="custom-card">
-                    <h1>Add a New Workout!</h1>
-                    <p>Use the form below to submit your latest workout</p>
-                </div>
+          <div class="col-21 col-md-6 col-lg-8">
+            <!-- area containing form to input a new workout -->
+            <div id="new-workout-section" class="">
+              <h1>Add a New Workout!</h1>
+
+              <div id="new-workout-card" class="workout-tile">
+                <p>Use the form below to submit your latest workout</p>
+
+                <form action="https://formdump.codeinstitute.net" method="POST" id="new-workout-form"> <!-- remove link for form submission -->
+                  <input type="text">
+                  <input type="text">
+                  <input type="text">
+                </form>
+              </div>
             </div>
-            <div class="col-21 col-md-6 col-lg-4 test">
-                <h1>See what you've done!</h1>
-                <p>Below are a record of all your logged workouts</p>
-            </div>
+          </div>
+          <!-- area containing stats on previous workouts -->
+          <div class="col-21 col-md-6 col-lg-4">
+            <h1>See what you've done!</h1>
+            <p>Below are a record of all your logged workouts</p>
+          </div>
         </div>
       </section>
+
+      <!-- area for previous exercises that have been done -->
       <section id="past-exercises" class="container">
-        <div class="row test">
-            <h1>Here are some of your recent exercises</h1>
+        <div class="row">
+          <h1>Here are some of your recent exercises</h1>
         </div>
       </section>
     </main>
