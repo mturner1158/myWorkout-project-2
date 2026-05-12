@@ -87,6 +87,15 @@ h1 {
     color: var(--secondary-colour);
 }
 
+.workout-count {
+    font-size: x-large;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.workout-count-text {
+    text-align: center;
+}
 
 .tile-display {
     padding: 10px;
