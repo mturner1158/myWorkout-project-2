@@ -105,11 +105,20 @@ h1 {
     background-color: white;
     border: 1px solid var(--secondary-colour);
     border-radius: 10px;
-    padding: 5px;
-    height: 250px;
+    padding: 8px;
+    height: 200px;
+    text-align: center;
 }
 
+.exercise-tile i {
+    font-size: 4rem;
+    text-align: center;
+    margin: 6px;
+}
 
+.exercise-tile p {
+    margin: 4px;
+}
 /* progress page styles */
 
 
