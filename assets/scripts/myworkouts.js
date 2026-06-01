@@ -16,10 +16,6 @@ const generatedWorkouts = Array.from({ length: 15 }, (_, i) => ({
 
 console.log(generatedWorkouts);
 
-// adds the first object to the workout-hitory tile
-
-const firstWorkout = generatedWorkouts[0];
-
 // Select the tbody inside the div
 const workoutHistoryTbody = document.querySelector('.workout-history-card tbody');
 
@@ -28,14 +24,36 @@ const workoutHistoryTbody = document.querySelector('.workout-history-card tbody'
 // dateSpan.textContent = firstWorkout.Date;
 
 // Loop through the exercises and build a row for each
-firstWorkout.Exercises.forEach(exercise => {
-  const row = document.createElement('tr');
+const historyRow = document.querySelector('#workout-history-display .row');
 
-  row.innerHTML = `
-    <td>${exercise.Exercise}</td>
-    <td>${exercise.Weight}</td>
-    <td>${exercise.Reps}</td>
-  `;
+if (historyRow) {
+  generatedWorkouts.forEach(workout => {
+    const card = document.createElement('div');
+    card.classList.add('col-12', 'col-md-6', 'col-lg-4', 'workout-history-card');
 
-  workoutHistoryTbody.appendChild(row);
-});
+    card.innerHTML = `
+      <h2>Workout ${workout.Workout}</h2>
+      <p>Date: <span>12/09/2024</span></p>
+      <table class="table table-striped mt-3">
+        <thead>
+          <tr>
+            <th>Exercise</th>
+            <th>Weight (kg)</th>
+            <th>Reps</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${workout.Exercises.map(exercise => `
+            <tr>
+              <td>${exercise.Exercise}</td>
+              <td>${exercise.Weight}</td>
+              <td>${exercise.Reps}</td>
+            </tr>
+          `).join('')}
+        </tbody>
+      </table>
+    `;
+
+    historyRow.appendChild(card);
+  });
+}
