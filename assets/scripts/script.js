@@ -1,3 +1,20 @@
+
+// IMPORTS
+
+// CONSTANTS
+
+// STATED VARIABLES
+
+// HELPER FUNCTIONS
+
+// CORE FUNCTIONS
+
+// DOM FUNCITONS
+
+// EVENT HANDLERS
+
+
+
 document.getElementById('new-workout-form').addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -43,3 +60,17 @@ document.getElementById('new-workout-form').addEventListener('submit', function(
     // Reset the form
     this.reset();
 });
+
+
+const exercises = [
+  "Calf Raise", "Squat", "Lunge", "Chest Press", "Bench Press",
+  "Deadlift", "Shoulder Press", "Bent-Over Row", "Biceps Curl", "Triceps Dip"
+];
+
+const workoutLog = Array.from({ length: 15 }, () => ({
+  Exercise: exercises[Math.floor(Math.random() * exercises.length)],
+  Weight: parseFloat((Math.random() * 100 + 20).toFixed(1)),
+  Reps: Math.floor(Math.random() * 12) + 3
+}));
+
+console.log(workoutLog);
