@@ -1,20 +1,3 @@
-
-// IMPORTS
-
-// CONSTANTS
-
-// STATED VARIABLES
-
-// HELPER FUNCTIONS
-
-// CORE FUNCTIONS
-
-// DOM FUNCITONS
-
-// EVENT HANDLERS
-
-
-
 document.getElementById('new-workout-form').addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -29,7 +12,7 @@ document.getElementById('new-workout-form').addEventListener('submit', function(
         return;
     }
 
-    // Make table visible (removes Bootstrap's 'invisible' class)
+    // Make table visible by removing bootstrap class
     const table = document.getElementById('workout-table');
     table.classList.remove('invisible');
 
