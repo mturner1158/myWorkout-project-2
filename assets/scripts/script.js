@@ -67,10 +67,13 @@ const exercises = [
   "Deadlift", "Shoulder Press", "Bent-Over Row", "Biceps Curl", "Triceps Dip"
 ];
 
-const workoutLog = Array.from({ length: 15 }, () => ({
-  Exercise: exercises[Math.floor(Math.random() * exercises.length)],
-  Weight: parseFloat((Math.random() * 100 + 20).toFixed(1)),
-  Reps: Math.floor(Math.random() * 12) + 3
+const generatedWorkouts = Array.from({ length: 15 }, (_, i) => ({
+  Workout: i + 1,
+  Exercises: Array.from({ length: 5 }, () => ({
+    Exercise: exercises[Math.floor(Math.random() * exercises.length)],
+    Weight: parseFloat((Math.random() * 100 + 20).toFixed(1)),
+    Reps: Math.floor(Math.random() * 12) + 3
+  }))
 }));
 
-console.log(workoutLog);
+console.log(generatedWorkouts);
