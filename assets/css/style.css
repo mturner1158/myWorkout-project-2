@@ -127,6 +127,21 @@ h1 {
     font-style: italic ;
 }
 
+#overall-buttons button {
+    background-color: var(--secondary-colour);
+    color: var(--primary-background-colour);
+    border: var(--primary-colour) 1px solid;
+    border-radius: 5px;
+}
+
+#overall-buttons button:hover {
+    background-color: var(--primary-colour);
+    color: var(--secondary-colour);
+    border: var(--primary-colour) 1px solid;
+    border-radius: 5px;
+}
+
+
 /* my workouts page styles */
 .workout-history-card {
     background-color: var(--primary-background-colour);
