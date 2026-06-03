@@ -1,11 +1,25 @@
 // CONSTANTS - ALL CONSTANTS ARE DEFINED HERE
 
 const form  = document.getElementById('new-workout-form'); //form elements
-const table = document.getElementById('workout-table'); //invisible table
-const formTBody = table.querySelector('tbody'); //the body of the table
 const originalTable = document.getElementById('submission-display').innerHTML //html structure of the table 
 
 //FUNCTIONS - ALL FUNCTIONS ARE DEFINED HERE
+
+/*
+* re-queries the table every time it is called
+*/
+
+function getTable() {
+    return document.getElementById('workout-table');
+}
+
+/*
+* re-queries the table body every time it is called
+*/
+
+function getFormTBody() {
+    return document.querySelector('#workout-table tbody');
+}
 
 /*
 * Gets values from the form and returns as an object
@@ -55,8 +69,8 @@ function addTableRow({ exercise, weight, reps }) {
 function removeTableEntry(row) {
     row.querySelector('.remove-row').addEventListener('click', () => {
         row.remove();
-        if (formTBody.querySelectorAll('tr').length === 0) {
-            table.classList.add('invisible');
+        if (getFormTBody().querySelectorAll('tr').length === 0) {
+            getTable().classList.add('invisible');
         }
     });
 }
@@ -103,11 +117,11 @@ form.addEventListener('submit', function(e) {
         return;
     }
 
-    table.classList.remove('invisible');
+    getTable().classList.remove('invisible');
 
     const row = addTableRow(values);
     removeTableEntry(row);
-    formTBody.appendChild(row);
+    getFormTBody().appendChild(row);
 
     this.reset();
 });
@@ -146,6 +160,12 @@ document.getElementById('overall-submit-button').addEventListener('click', funct
     console.log(workout);
     confirmTableSubmission();
 });
+
+/*
+* on clicking the reset button
+* removes success message
+* resets the display table with invisible class to allow resubmission of the form
+*/
 
 document.getElementById('overall-reset-button').addEventListener('click', function() 
 {
