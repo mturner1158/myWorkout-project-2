@@ -86,6 +86,11 @@ The site will have an easy to follow structure with a standardised navigation ba
 ## Testing
 
 ## Bugs
+1. Table was not spaced properly on first page 
+2. Form spacing would not work 
+3. Could not right align home page on a large screen
+4. date was undefined on My Workouts page
+5. Footer would not stick to the bottom of the apge
 
 ## Deployment
 
