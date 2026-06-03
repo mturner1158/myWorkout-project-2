@@ -60,7 +60,27 @@ function removeTableEntry(row) {
     });
 }
 
+function confirmTableSubmission() {
+    const container = document.getElementById('submission-display'); 
+    container.innerHTML = `
+        <div class="alert alert-success text-center" role="alert">
+            <i class="fa-solid fa-circle-check me-2"></i>
+            Workout logged successfully!
+        </div>
+    `;
+}
+
+function resetWorkoutForm() {
+    formTBody.innerHTML = '';
+    table.classList.add('invisible');
+    form.reset();
+}
+
 // EVENT LISTENERS - ALL EVENT LISTERNERS ARE DEFINED HERE
+
+/*
+* 
+*/
 
 form.addEventListener('submit', function(e) {
     e.preventDefault();
@@ -81,5 +101,29 @@ form.addEventListener('submit', function(e) {
 });
 
 
+document.getElementById('overall-submit-button').addEventListener('click', function() {
+    const rows = document.querySelectorAll('#workout-table tbody tr');
 
+    if (rows.length === 0) {
+        alert('Please add at least one exercise before submitting.');
+        return;
+    }
+
+    const workout = {
+        date: new Date().toISOString(),
+        exercises: []
+    };
+
+    rows.forEach(row => {
+        const cells = row.querySelectorAll('td');
+        workout.exercises.push({
+            exercise: cells[0].textContent,
+            weight: parseFloat(cells[1].textContent),
+            reps: parseInt(cells[2].textContent)
+        });
+    });
+
+    console.log(workout);
+    confirmTableSubmission();
+});
 
