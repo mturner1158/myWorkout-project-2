@@ -1,24 +1,38 @@
-document.getElementById('new-workout-form').addEventListener('submit', function(e) {
-    e.preventDefault();
+// CONSTANTS - ALL CONSTANTS ARE DEFINED HERE
 
-    // Get input values
-    const exercise = this.querySelector('[name="exercise"]').value.trim();
-    const weight   = this.querySelector('[name="weight"]').value.trim();
-    const reps     = this.querySelector('[name="reps"]').value.trim();
+const form  = document.getElementById('new-workout-form'); //form elements
+const table = document.getElementById('workout-table'); //invisible table
+const formTBody = table.querySelector('tbody'); //the body of the table
 
-    // Validate all fields are filled
-    if (!exercise || !weight || !reps) {
-        alert('Please fill in all three fields before submitting.');
-        return;
-    }
+//FUNCTIONS - ALL FUNCTIONS ARE DEFINED HERE
 
-    // Make table visible by removing bootstrap class
-    const table = document.getElementById('workout-table');
-    table.classList.remove('invisible');
+/*
+* Gets values from the form and returns as an object
+*/
 
-    // Build and append new row
-    const formTbody = table.querySelector('tbody');
-    const row   = document.createElement('tr');
+function getFormValues(form) {
+    return {
+        exercise: form.querySelector('[name="exercise"]').value.trim(),
+        weight:   form.querySelector('[name="weight"]').value.trim(),
+        reps:     form.querySelector('[name="reps"]').value.trim(),
+    };
+}
+
+/*
+* returns the three form input fields appended
+*/
+
+function isValid({ exercise, weight, reps }) {
+    return exercise && weight && reps;
+}
+
+/*
+* adds the form inputs to the table in the workout tile div 
+* removes the invisible tag if this is the first row to make the table visible 
+*/
+
+function addTableRow({ exercise, weight, reps }) {
+    const row = document.createElement('tr');
     row.innerHTML = `
         <td>${exercise}</td>
         <td>${weight}</td>
@@ -29,18 +43,43 @@ document.getElementById('new-workout-form').addEventListener('submit', function(
             </button>
         </td>
     `;
-    formTbody.appendChild(row);
+    return row;
+}
 
-    // Wire up the remove button for this new row
-    row.querySelector('.remove-row').addEventListener('click', function() {
+/*
+* removes a row when the remove button is clicked
+* if there are no rows remaining in the table it will add the invisible class again
+*/
+
+function removeTableEntry(row) {
+    row.querySelector('.remove-row').addEventListener('click', () => {
         row.remove();
-        // Hide table again if no rows remain
-        if (tbody.querySelectorAll('tr').length === 0) {
+        if (formTBody.querySelectorAll('tr').length === 0) {
             table.classList.add('invisible');
         }
     });
+}
 
-    // Reset the form
+// EVENT LISTENERS - ALL EVENT LISTERNERS ARE DEFINED HERE
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const values = getFormValues(this);
+    if (!isValid(values)) {
+        alert('Please fill in all three fields before submitting.');
+        return;
+    }
+
+    table.classList.remove('invisible');
+
+    const row = addTableRow(values);
+    removeTableEntry(row);
+    formTBody.appendChild(row);
+
     this.reset();
 });
+
+
+
 
