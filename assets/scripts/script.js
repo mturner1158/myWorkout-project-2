@@ -3,6 +3,7 @@
 const form  = document.getElementById('new-workout-form'); //form elements
 const table = document.getElementById('workout-table'); //invisible table
 const formTBody = table.querySelector('tbody'); //the body of the table
+const originalTable = document.getElementById('submission-display').innerHTML //html structure of the table 
 
 //FUNCTIONS - ALL FUNCTIONS ARE DEFINED HERE
 
@@ -60,6 +61,10 @@ function removeTableEntry(row) {
     });
 }
 
+/*
+* replaces the table with the inputs with a success message
+*/
+
 function confirmTableSubmission() {
     const container = document.getElementById('submission-display'); 
     container.innerHTML = `
@@ -70,16 +75,23 @@ function confirmTableSubmission() {
     `;
 }
 
-function resetWorkoutForm() {
-    formTBody.innerHTML = '';
-    table.classList.add('invisible');
-    form.reset();
+/*
+* replaces the success message with the original table
+*/
+
+function insertTable() {
+    document.getElementById('submission-display').innerHTML = originalTable;
 }
 
 // EVENT LISTENERS - ALL EVENT LISTERNERS ARE DEFINED HERE
 
 /*
-* 
+* on clicking the plus icon in the form this:
+* checks there are inputs in three fields and displays an alert if false
+* removes the invisible class from the table to make it visible 
+* adds the form inputs as a new row 
+* checks if the remove button has been clicked to perform that action
+* resets for form for another entry
 */
 
 form.addEventListener('submit', function(e) {
@@ -100,6 +112,14 @@ form.addEventListener('submit', function(e) {
     this.reset();
 });
 
+
+/*
+* on clicking the submit your workout buttion this does
+* checks if the table has values and displays an alert if false 
+* creates an empty array with the exact date
+* records table entries into the array 
+* displays a sucess message on clicking submit your workout 
+*/
 
 document.getElementById('overall-submit-button').addEventListener('click', function() {
     const rows = document.querySelectorAll('#workout-table tbody tr');
@@ -126,4 +146,9 @@ document.getElementById('overall-submit-button').addEventListener('click', funct
     console.log(workout);
     confirmTableSubmission();
 });
+
+document.getElementById('overall-reset-button').addEventListener('click', function() 
+{
+    insertTable();
+})
 

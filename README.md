@@ -90,7 +90,10 @@ The site will have an easy to follow structure with a standardised navigation ba
 2. Form spacing would not work 
 3. Could not right align home page on a large screen
 4. date was undefined on My Workouts page
-5. Footer would not stick to the bottom of the apge
+5. Footer would not stick to the bottom of the page
+6. On success the table to collect the form entries would not reappear - replace submit workout with reset button
+7. Didnt add multiple objects to the recordings - change to store workout objects in an array
+8. Upon clicking reset, you could not submit another form - change table and tbody constants to functions
 
 ## Deployment
 
