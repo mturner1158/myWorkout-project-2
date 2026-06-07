@@ -1,4 +1,4 @@
-# myWorkout-project-2
+# Project 2: MyWokrout
 A website that allows users to add their workouts and track their progress. 
 
 ## Table of Contents 
@@ -97,6 +97,14 @@ The site will have an easy to follow structure with a standardised navigation ba
 9. Padding did not get added horizontally for history cards
 
 ## Deployment
+This website is deployed using GitHub Pages by using the following method: 
+
+1. Open up the github repository
+2. Navigate to the Settings tab
+3. Select the pages option in the 'Code and Automation' section
+4. For the source choose 'deploy from branch'
+5. For branch, choose main
+6. After the webpage refreshes, the ribbon will say "Your site is live at https://mturner1158.github.io/myWorkout-project-2/"
 
 ## Code from External Sources
 
