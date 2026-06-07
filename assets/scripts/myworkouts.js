@@ -38,7 +38,7 @@ console.log(generatedWorkouts);
 if (historyRow) {
   generatedWorkouts.forEach(workout => {
     const card = document.createElement('div');
-    card.classList.add('col-12', 'col-md-6', 'col-lg-4', 'workout-history-card', 'g-3');
+    card.classList.add('col-12', 'col-md-6', 'col-lg-4', 'workout-history-card');
 
     card.innerHTML = `
       <h2>Workout ${workout.Workout}</h2>

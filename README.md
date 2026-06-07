@@ -94,6 +94,7 @@ The site will have an easy to follow structure with a standardised navigation ba
 6. On success the table to collect the form entries would not reappear - replace submit workout with reset button
 7. Didnt add multiple objects to the recordings - change to store workout objects in an array
 8. Upon clicking reset, you could not submit another form - change table and tbody constants to functions
+9. Padding did not get added horizontally for history cards
 
 ## Deployment
 
