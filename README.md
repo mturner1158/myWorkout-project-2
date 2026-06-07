@@ -87,6 +87,22 @@ This section shows the wireframes for each page created in this website, across 
 <img src="assets/images/wireframe-history.png">
 
 ## Frameworks & Languages
+This section highlights all the langauges and frameworks used in this seciton.
+
+The following languages are used in this project:
+
+* HTML
+* CSS
+* JavaScript
+
+The following frameworks are used in this project: 
+
+* Bootstrap v5.3.8
+* Github
+* Google Fonts
+* Font Awesome
+* JQuery
+* JEST (if testing - REMOVE IF NOT)
 
 ## Features
 This section outlines the key features on each page. 
