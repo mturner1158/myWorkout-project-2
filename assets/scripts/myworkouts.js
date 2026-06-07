@@ -43,7 +43,7 @@ if (historyRow) {
     card.innerHTML = `
     <div class='workout-history-card'>
       <h2>Workout ${workout.Workout}</h2>
-      <p>Date: <span>${workout.date}</span></p>
+      <p>Date: <span>${workout.Date}</span></p>
       <table class="table table-striped mt-3">
         <thead>
           <tr>
