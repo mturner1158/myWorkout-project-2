@@ -25,7 +25,7 @@
 <body class="d-flex flex-column min-vh-100">
   <!-- Navbar begins with bootstrap and modified to suit site -->
   <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
-    <div class="container-fluid">
+    <div class="container">
       <a id="logo" class="navbar-brand" href="index.html">MyWorkout</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,9 +38,6 @@
           </li>
           <li class="nav-item nav-btn">
             <a class="nav-link" href="myworkouts.html">My workouts</a>
-          </li>
-          <li class="nav-item nav-btn">
-            <a class="nav-link" href="progress.html">Progress</a>
           </li>
         </ul>
       </div>
@@ -94,7 +91,7 @@
                     <input type="text" class="form-control" name="exercise" />
                   </div>
                   <div class="col-3">
-                    <label for="Weight" class="form-label">Weight</label>
+                    <label for="Weight" class="form-label">Weight (kg)</label>
                     <input type="number" class="form-control" name="weight" />
                   </div>
                   <div class="col-3">
@@ -112,7 +109,7 @@
                   <thead>
                     <tr>
                       <th>Exercise</th>
-                      <th>Weight</th>
+                      <th>Weight (kg)</th>
                       <th>Reps</th>
                       <th>Remove</th>
                     </tr>
