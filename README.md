@@ -129,26 +129,50 @@ The footer is featured across all pages, and aims to:
 The dashboard page as two key sections which cover a number of features:
 
 #### Feature 1: Workout Counting
-**What this does**
+**What this does:**
 This feature shows the number of workouts that would currently be logged on the website in the last week, last month, last year and all time. In this case, the orignal numbers when the page loads are hard coded as there is no back end storage for this site.
 
-**How it works** 
+**How it works:** 
 Once a user inputs a workout using features 2-4, the data is logged as an object and an iteration calculation updates each number. 
 
-**User Stories**
+**User Stories:**
 This satisfies User 1. 
 
 <img src="assets/images/feature-workout-count.png">
 
 #### Feature 2: Workout Input
+**What this does:**
+This feature allows the user to add in the name of an exercise, the weight in kilograms and the number of reps for each workout. Once satisfied, users can hit the plus to add this data to a table to view.
+
+**How it works:** 
+This uses a standard HTML input form with a text input and two numerical inputs. Javascript is used to take the form inputs and add them to a table which is invisible until the first submission.
+
+**User Stories:**
+This satisfies User 1.
 
 <img src="assets/images/feature-input-form.png">
 
 #### Feature 3: Workout Logging
+**What this does:**
+This features shows the data which the user has already submitted. The user can add as many rows as they please. If a user has made an error, they can use the red icon in the remove column to remove the row and reinput the correct information using the form again. 
+
+**How it works:** 
+This uses Javascript functions to add an event listener to record when the red remove icon is clicked to remove a row or when the form submission icon is clicked to add the row.
+
+**User Stories:**
+This satisfies User 1.
 
 <img src="assets/images/feature-input-table.png">
 
 #### Feature 4: Workout Submission
+**What this does:**
+This feature takes all the rows of the table and creates an object with the submission date and the inputted information. This also increases the counts in Feature 1. Once submitted, a success message appears to asure users that this is recorded. Users can then use the reset button to submit another workout. 
+
+**How it works:** 
+This users a mixture of event listeners and functions to ensure the object is logged. Functions ensure this can be reset and multiple workotus can be submitted as objects and the count can keep increasing. 
+
+**User Stories:**
+This satisfies User 1. 
 
 <img src="assets/images/feature-workout-submit.png">
 
@@ -156,10 +180,16 @@ This satisfies User 1.
 The history page has one main feature:
 
 #### Feature 5: Historic Workouts
+**What this does:**
+Displays past workouts. In this case, the workouts are randomly generated with a date from 1st January 2024 to present day from a list of 10 exercises as there is no back end storage. These are ordered fom most recent to least recent.
+
+**How it works:** 
+Using a script, we generate 15 objects containing a randomised date, 5 exercises with weight and reps fro each. Then we generate a card for each object and add these to the DOM to be displayed for the user. 
+
+**User Stories:**
+This satisfies User 2.
 
 <img src="assets/images/feature-history-cards.png">
-
-### History
 
 ## Testing
 
