@@ -19,7 +19,10 @@ function randomDate(start, end) {
   return date.toLocaleDateString('en-GB'); // formats as DD/MM/YYYY
 }
 
-// generates a set of 15 exercsises in an object to use in the workout history section
+/*
+* generates a set of 15 exercsises in an object to use in the workout history section
+* sorts the dates and relabels the arrays by date order 
+*/
 
 const generatedWorkouts = Array.from({ length: 15 }, (_, i) => ({
   Workout: i + 1,
