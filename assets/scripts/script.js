@@ -97,6 +97,11 @@ function insertTable() {
     document.getElementById('submission-display').innerHTML = originalTable;
 }
 
+function increaseCount(id) {
+    const count = document.getElementById(id);
+    count.textContent = parseInt(count.textContent) + 1;
+}
+
 // EVENT LISTENERS - ALL EVENT LISTERNERS ARE DEFINED HERE
 
 /*
@@ -133,6 +138,7 @@ form.addEventListener('submit', function(e) {
 * creates an empty array with the exact date
 * records table entries into the array 
 * displays a sucess message on clicking submit your workout 
+* increases all the numbers at the top of the page on submission
 */
 
 document.getElementById('overall-submit-button').addEventListener('click', function() {
@@ -159,6 +165,11 @@ document.getElementById('overall-submit-button').addEventListener('click', funct
 
     console.log(workout);
     confirmTableSubmission();
+
+    increaseCount('weekly-count');
+    increaseCount('monthly-count');
+    increaseCount('yearly-count');
+    increaseCount('total-count');
 });
 
 /*
