@@ -38,9 +38,10 @@ console.log(generatedWorkouts);
 if (historyRow) {
   generatedWorkouts.forEach(workout => {
     const card = document.createElement('div');
-    card.classList.add('col-12', 'col-md-6', 'col-lg-4', 'workout-history-card');
+    card.classList.add('col-12', 'col-md-6', 'col-lg-4');
 
     card.innerHTML = `
+    <div class='workout-history-card'>
       <h2>Workout ${workout.Workout}</h2>
       <p>Date: <span>${workout.date}</span></p>
       <table class="table table-striped mt-3">
@@ -61,6 +62,7 @@ if (historyRow) {
           `).join('')}
         </tbody>
       </table>
+    </div>
     `;
 
     historyRow.appendChild(card);
