@@ -88,10 +88,22 @@ This section outlines the key features on each page.
 Common features across all pages on this site include the navigate bar and the footer. 
 
 #### Navigation Bar
+The navigation bar is featured on all pages, and aims to:
+
+* Consistant styling and position for each of use 
+* Responsive design across small, medium and large screens
+
+<img src="assets/images/feature-navbar.png">
 
 #### Footer
+The footer is featured across all pages, and aims to:
+
+* provide links to common social media sites 
+
+<img src="assets/images/feature-footer.png>
 
 ### Dashboard
+The dashboard page as two key sections which cover a number of features:
 
 ### History
 
