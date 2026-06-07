@@ -1,5 +1,3 @@
-// CONSTANTS - ALL CONSTANTS ARE DEFINED HERE
-
 // creates an array of 10 exercises to be used to randomly generate workouts
 const exercises = [
   "Calf Raise", "Squat", "Lunge", "Chest Press", "Bench Press",
