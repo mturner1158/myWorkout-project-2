@@ -129,6 +129,14 @@ The footer is featured across all pages, and aims to:
 The dashboard page as two key sections which cover a number of features:
 
 #### Feature 1: Workout Counting
+**What this does**
+This feature shows the number of workouts that would currently be logged on the website in the last week, last month, last year and all time. In this case, the orignal numbers when the page loads are hard coded as there is no back end storage for this site.
+
+**How it works** 
+Once a user inputs a workout using features 2-4, the data is logged as an object and an iteration calculation updates each number. 
+
+**User Stories**
+This satisfies User 1. 
 
 <img src="assets/images/feature-workout-count.png">
 
