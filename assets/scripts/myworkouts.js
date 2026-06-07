@@ -1,9 +1,18 @@
-// creates an array of 10 exercises to be used to randomly generate workouts
+// CONSTANTS - ALL CONSTANTS ARE DEFINED HERE
 
+// creates an array of 10 exercises to be used to randomly generate workouts
 const exercises = [
   "Calf Raise", "Squat", "Lunge", "Chest Press", "Bench Press",
   "Deadlift", "Shoulder Press", "Bent-Over Row", "Biceps Curl", "Triceps Dip"
 ];
+
+// Select the tbody inside the div
+const workoutHistoryTbody = document.querySelector('.workout-history-card tbody');
+
+// Loop through the exercises and build a row for each
+const historyRow = document.querySelector('#workout-history-display .row');
+
+
 
 // function to generate a random date
 
@@ -26,11 +35,7 @@ const generatedWorkouts = Array.from({ length: 15 }, (_, i) => ({
 
 console.log(generatedWorkouts);
 
-// Select the tbody inside the div
-const workoutHistoryTbody = document.querySelector('.workout-history-card tbody');
-
-// Loop through the exercises and build a row for each
-const historyRow = document.querySelector('#workout-history-display .row');
+// generates cards based on the carrer which was generated in the previous constants
 
 if (historyRow) {
   generatedWorkouts.forEach(workout => {
