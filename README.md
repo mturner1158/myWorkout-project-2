@@ -42,14 +42,14 @@ This user should expect to:
 
 * Add each exercise of their workout
 * Submit their exercises
-* See total weight moved during their workout
 * See confirmation of their workout submission
+* View how many workouts they have done over different time periods
 
 **User 2: Workout Tracking**
 This user should expect to:
 
 * See previously submitted workouts
-* Amend them as necessary 
+* Ordered an a navigatable way
 
 ## Design
 This section shows the design choices I made as part of the design of this website, alongside wireframes to show the rough layout of each page before construction of the website.
@@ -70,14 +70,21 @@ There are two fonts used through this site:
 1. Hind is the primary font used for main bodies of text
 2. Monserrat is the secondary font and is used for headers and important bits of text
 
-The site will have an easy to follow structure with a standardised navigation bar across all pages to allow users to find the information they need. This web application consists of 3 pages and a model:
+The site will have an easy to follow structure with a standardised navigation bar across all pages to allow users to find the information they need. This web application consists of two pages.
 
 1. A home page (labeled My Dashboard) allowing users to submit their workouts and view key statistics
 2. A page showing previous workouts
-3. A page showing graphs for the statistics of the weight used in each workout 
-4. On success of submitting or chaning a workout, a model will appear to show the total weight, the amount of exercises, the workout number and confirm a successful submission
 
 ### Wireframes
+This section shows the wireframes for each page created in this website, across small, medium and large screens from left to right.
+
+#### Dashboard
+
+<img src="assets/images/wireframe-home-page.png">
+
+####
+
+<img src="assets/images/wireframe-history.png">
 
 ## Frameworks & Languages
 
@@ -100,7 +107,7 @@ The footer is featured across all pages, and aims to:
 
 * provide links to common social media sites 
 
-<img src="assets/images/feature-footer.png>
+<img src="assets/images/feature-footer.png">
 
 ### Dashboard
 The dashboard page as two key sections which cover a number of features:
