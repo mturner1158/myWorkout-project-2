@@ -82,6 +82,18 @@ The site will have an easy to follow structure with a standardised navigation ba
 ## Frameworks & Languages
 
 ## Features
+This section outlines the key features on each page. 
+
+### Common Features
+Common features across all pages on this site include the navigate bar and the footer. 
+
+#### Navigation Bar
+
+#### Footer
+
+### Dashboard
+
+### History
 
 ## Testing
 
