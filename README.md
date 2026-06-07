@@ -86,15 +86,19 @@ The site will have an easy to follow structure with a standardised navigation ba
 ## Testing
 
 ## Bugs
-1. Table was not spaced properly on first page 
-2. Form spacing would not work 
-3. Could not right align home page on a large screen
-4. date was undefined on My Workouts page
-5. Footer would not stick to the bottom of the page
-6. On success the table to collect the form entries would not reappear - replace submit workout with reset button
-7. Didnt add multiple objects to the recordings - change to store workout objects in an array
-8. Upon clicking reset, you could not submit another form - change table and tbody constants to functions
-9. Padding did not get added horizontally for history cards
+The following bugs occured during the design of this site: 
+
+|ID|Bug|Fix   |
+|:-----|:-------|:-------------|
+|1|Table was not spaced properly on first page|Changed table width to 100%|
+|2|Form spacing would not work |STILL NEED TO FIX|
+|3|Could not right align home page on a large screen|Container classes were not implemented correctly and have now been changed|
+|4|Date was undefined on My Workouts page|Typo in call for date|
+|5|Footer would not stick to the bottom of the page|STILL NEED TO FIX|
+|6|On success the table to collect the form entries would not reappear|Added in a new function to add the code for the invisible table after clicking reset|
+|7|Didnt add multiple objects to the recordings|Wokrouts were stored in an array|
+|8|Upon clicking reset, you could not submit another form|Table and Tbody constants became functions that store values at the page load|
+|9|Padding did not get added horizontally for history cards|INtriduced a separate div for the cards on the histroy page|
 
 ## Deployment
 This website is deployed using GitHub Pages by using the following method: 
