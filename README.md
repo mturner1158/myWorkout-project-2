@@ -82,7 +82,7 @@ This section shows the wireframes for each page created in this website, across 
 
 <img src="assets/images/wireframe-home-page.png">
 
-####
+#### History
 
 <img src="assets/images/wireframe-history.png">
 
@@ -127,6 +127,29 @@ The footer is featured across all pages, and aims to:
 
 ### Dashboard
 The dashboard page as two key sections which cover a number of features:
+
+#### Feature 1: Workout Counting
+
+<img src="assets/images/feature-workout-count.png">
+
+#### Feature 2: Workout Input
+
+<img src="assets/images/feature-input-form.png">
+
+#### Feature 3: Workout Logging
+
+<img src="assets/images/feature-input-table.png">
+
+#### Feature 4: Workout Submission
+
+<img src="assets/images/feature-workout-submit.png">
+
+### History
+The history page has one main feature:
+
+#### Feature 5: Historic Workouts
+
+<img src="assets/images/feature-history-cards.png">
 
 ### History
 
