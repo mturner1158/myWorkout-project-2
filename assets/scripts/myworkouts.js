@@ -29,7 +29,9 @@ const generatedWorkouts = Array.from({ length: 15 }, (_, i) => ({
     Weight: parseFloat((Math.random() * 100 + 20).toFixed(1)),
     Reps: Math.floor(Math.random() * 12) + 3
   }))
-}));
+}))
+.sort((a, b) => new Date(b.Date.split('/').reverse().join('-')) - new Date(a.Date.split('/').reverse().join('-')))
+.map((workout, i) => ({ ...workout, Workout: i + 1 }));
 
 console.log(generatedWorkouts);
 
