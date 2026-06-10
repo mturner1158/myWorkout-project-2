@@ -84,14 +84,16 @@ h1 {
     width: 50%;
 }
 
+.submission-section{
+    padding: 1rem;
+}
+
 .workout-tile {
-    background-color: var(--primary-background-colour);
-    border: 3px solid var(--primary-colour);
+    background-color: #FAF9F6;
+    border: 1px solid var(--secondary-colour);
     border-radius: 10px;
     padding: 8px;
-    box-shadow: 0 2px 4px 0 var(--primary-colour), 0 3px 10px 0 var(--primary-colour);
     height: auto;
-    width: 100%;
 }
 
 #submit-exercise {
@@ -100,7 +102,7 @@ h1 {
 }
 
 .count-section {
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .history-card {
@@ -134,25 +136,46 @@ h1 {
 
 #workout-table {
     width: 100%;
-    margin-bottom: 1rem;
+    border-collapse: collapse;
+    margin-top: 16px;
+    font-size: 14px;
 }
 
-#workout-table thead {
-    color: var(--secondary-colour);
-    font-style: italic ;
+#workout-table thead tr {
+    border-top: 1px solid var(--secondary-colour);
+    border-bottom: 1px solid var(--secondary-colour);
 }
+
+#workout-table th {
+    padding: 8px 12px;
+    font-weight: 500;
+    font-style: normal;
+    color: #6c757d;
+    text-align: left;
+}
+
+#workout-table td {
+    padding: 8px 12px;
+    border-bottom: 0.5px solid #e0e0e0;
+}
+
+#workout-table colgroup col:nth-child(1) { width: 40%; }
+#workout-table colgroup col:nth-child(2) { width: 20%; }
+#workout-table colgroup col:nth-child(3) { width: 20%; }
+#workout-table colgroup col:nth-child(4) { width: 20%; }
 
 #overall-buttons button {
-    background-color: var(--secondary-colour);
-    color: var(--primary-background-colour);
-    border: var(--primary-colour) 1px solid;
+    background-color: #FAF9F6;
+    color: var(--secondary-colour);
+    border: var(--secondary-colour) 1px solid;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 #overall-buttons button:hover {
-    background-color: var(--primary-colour);
-    color: var(--secondary-colour);
-    border: var(--primary-colour) 1px solid;
+    background-color: var(--secondary-colour);
+    color: var(--primary-background-colour);
+    border: var(--secondary-colour) 1px solid;
     border-radius: 5px;
 }
 
