@@ -61,6 +61,13 @@ h1 {
     font-family: var(--secondary-font);
     color: var(--primary-background-colour);
 }
+
+#navbar .nav-btn .nav-link.active {
+    color: var(--primary-colour);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
 /* footer styles */
 
 #footer {
@@ -96,9 +103,11 @@ h1 {
     height: auto;
 }
 
-#submit-exercise {
-    font-size: large;
+.add-exercise-btn {
     color: var(--secondary-colour);
+    border: 1px solid var(--secondary-colour);
+    border-radius: 6px;
+    padding: 6px 10px;
 }
 
 .count-section {
@@ -181,18 +190,56 @@ h1 {
 
 
 /* my workouts page styles */
-.workout-history-card {
-    background-color: var(--primary-background-colour);
-    border: 3px solid var(--primary-colour);
-    border-radius: 10px;
-    padding: 4px;
-    box-shadow: 0 2px 4px 0 var(--primary-colour), 0 3px 10px 0 var(--primary-colour);
-    height: auto;
+
+#myworkouts-header {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-top: 2rem;
 }
 
-/* .workout-history-card table {
+.history-heading-text {
+    margin-bottom: 5px;
+}
 
-} */
+.workout-history-card {
+    border: 1px solid var(--secondary-colour);
+    border-radius: 10px;
+    background-color: #FAF9F6;
+    padding: 16px;
+}
+
+.workout-history-card h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0 0 4px;
+}
+
+.workout-history-card table {
+    width: 100%;
+}
+
+.workout-history-card th {
+    font-size: 12px;
+    font-weight: 500;
+    color: #6c757d;
+    font-style: normal;
+    padding: 8px 12px;
+    border-top: 1px solid var(--secondary-colour);
+    border-bottom: 1px solid var(--secondary-colour);
+}
+
+.workout-history-card td {
+    padding: 8px 12px;
+    border-bottom: 0.5px solid #e0e0e0;
+    font-size: 14px;
+}
+
+.workout-date {
+    font-size: 13px;
+    color: #6c757d;
+    margin: 0 0 12px;
+}
+
 
 /* media queries */
 /* media queries for tablets or larger (768px or up) */

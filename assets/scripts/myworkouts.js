@@ -47,9 +47,12 @@ if (historyRow) {
 
     card.innerHTML = `
     <div class='workout-history-card'>
+      <div class="history-heading-text">
       <h2>Workout ${workout.Workout}</h2>
-      <p>Date: <span>${workout.Date}</span></p>
-      <table class="table table-striped mt-3">
+      <p class="workout-date"><span>${workout.Date}</span></p>
+      </div>
+      <div class="history-table">
+      <table>
         <thead>
           <tr>
             <th>Exercise</th>
@@ -67,6 +70,7 @@ if (historyRow) {
           `).join('')}
         </tbody>
       </table>
+      </div>
     </div>
     `;
 
