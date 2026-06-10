@@ -47,83 +47,87 @@
   <!-- main section -->
   <main class="flex-grow-1">
     <section id="workouts" class="container">
-
-      <div class="row justify-content-end">
-        <div class="col-12 col-lg-6">
-          <div class="row">
-            <div class="history mb-4">
-              <h1>History</h1>
-              <p>Below are a record of all your logged workouts</p>
-              <div class="row">
-                <div class="col-3">
+      <div class="row g-2">
+        <div class="col-12 count-section">
+          <div class="history mb-4">
+            <h1 class="h3">Workout history</h1>
+            <p>A record of all your logged sessions</p>
+            <div class="row g-2">
+              <div class="col-3">
+                <div class="history-card">
                   <!-- weekly counts -->
                   <p class="workout-count"> <span id="weekly-count">0</span> </p>
-                  <p class="workout-count-text"> workouts this week</p>
+                  <p class="workout-count-text">This week</p>
                 </div>
-                <div class="col-3">
+              </div>
+              <div class="col-3">
+                <div class="history-card">
                   <!-- montly count -->
                   <p class="workout-count"> <span id="monthly-count">4</span> </p>
-                  <p class="workout-count-text"> workouts this month</p>
+                  <p class="workout-count-text">This month</p>
                 </div>
-                <div class="col-3">
+              </div>
+              <div class="col-3">
+                <div class="history-card">
                   <!-- yearly count -->
                   <p class="workout-count"> <span id="yearly-count">24</span> </p>
-                  <p class="workout-count-text"> workouts this year</p>
+                  <p class="workout-count-text">This year</p>
                 </div>
-                <div class="col-3">
+              </div>
+              <div class="col-3">
+                <div class="history-card">
                   <!-- total count -->
                   <p class="workout-count"> <span id="total-count">35</span> </p>
-                  <p class="workout-count-text"> workouts in total</p>
+                  <p class="workout-count-text">All time</p>
                 </div>
-              </div>
-
-
-            </div>
-          </div>
-          <div class="row workout-tile">
-            <div class="">
-              <h1>Log a Workout!</h1>
-              <p>Use the form below to submit your latest workout</p>
-              <form action="" method="POST" id="new-workout-form" class="w-100">
-                <div class="row">
-                  <div class="col-5">
-                    <label for="exercise" class="form-label">Exercise</label>
-                    <input type="text" class="form-control" name="exercise" />
-                  </div>
-                  <div class="col-3">
-                    <label for="Weight" class="form-label">Weight (kg)</label>
-                    <input type="number" class="form-control" name="weight" />
-                  </div>
-                  <div class="col-3">
-                    <label for="reps" class="form-label">Reps</label>
-                    <input type="number" class="form-control" name="reps" />
-                  </div>
-                  <div class="col-1 d-flex align-items-end pb-1">
-                    <button type="submit" class="btn"><i class="fa-solid fa-plus" id="submit-exercise"></i></button>
-                  </div>
-                </div>
-                <!-- remove link for form submission -->
-              </form>
-              <div id="submission-display">
-                <table id="workout-table" class="mt-3 invisible">
-                  <thead>
-                    <tr>
-                      <th>Exercise</th>
-                      <th>Weight (kg)</th>
-                      <th>Reps</th>
-                      <th>Remove</th>
-                    </tr>
-                  </thead>
-                  <tbody></tbody>
-                </table>
-              </div>
-              <div id="overall-buttons">
-                <button id="overall-submit-button" class="final-btn">Submit your workout</button>
-                <button id="overall-reset-button" class="final-btn">Reset</button>
               </div>
             </div>
           </div>
         </div>
+        <div class="col-12 workout-tile">
+          <div class="">
+            <h1 class="h3">Log a workout</h1>
+            <p>Use the form below to submit your latest workout</p>
+            <form action="" method="POST" id="new-workout-form" class="w-100">
+              <div class="row">
+                <div class="col-5">
+                  <label for="exercise" class="form-label">Exercise</label>
+                  <input type="text" class="form-control" name="exercise" />
+                </div>
+                <div class="col-3">
+                  <label for="Weight" class="form-label">Weight (kg)</label>
+                  <input type="number" class="form-control" name="weight" />
+                </div>
+                <div class="col-3">
+                  <label for="reps" class="form-label">Reps</label>
+                  <input type="number" class="form-control" name="reps" />
+                </div>
+                <div class="col-1 d-flex align-items-end pb-1">
+                  <button type="submit" class="btn"><i class="fa-solid fa-plus" id="submit-exercise"></i></button>
+                </div>
+              </div>
+              <!-- remove link for form submission -->
+            </form>
+            <div id="submission-display">
+              <table id="workout-table" class="mt-3 invisible">
+                <thead>
+                  <tr>
+                    <th>Exercise</th>
+                    <th>Weight (kg)</th>
+                    <th>Reps</th>
+                    <th>Remove</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+            <div id="overall-buttons">
+              <button id="overall-submit-button" class="final-btn">Submit your workout</button>
+              <button id="overall-reset-button" class="final-btn">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
   </main>

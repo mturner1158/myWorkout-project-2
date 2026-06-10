@@ -27,7 +27,7 @@ section {
 
 main {
     padding-top: 55px;
-    background: url(../images/home-background.png) no-repeat;
+    background-color: var(--primary-background-colour);
     background-size: cover;
     width: 100%;
     min-height: 97vh;
@@ -40,7 +40,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    text-align: center;
+    text-align: left;
 }
 
 /* nav bar styles */
@@ -99,14 +99,29 @@ h1 {
     color: var(--secondary-colour);
 }
 
+.count-section {
+    padding: 2rem;
+}
+
+.history-card {
+    border: 1px solid var(--secondary-colour);
+    border-radius: 10px;
+    background-color: #FAF9F6;
+    height: auto;
+    padding: 12px;
+}
+
+.history-card p {
+    margin: 0;
+}
+
 .workout-count {
-    font-size: x-large;
-    text-align: center;
-    font-weight: bolder;
+    font-size: xx-large;
+    text-align: left;
 }
 
 .workout-count-text {
-    text-align: center;
+    text-align: left;
 }
 
 .tile-display {
@@ -114,7 +129,7 @@ h1 {
 }
 
 .history {
-    color: var(--primary-background-colour);
+    color: var(--secondary-colour);
 }
 
 #workout-table {
