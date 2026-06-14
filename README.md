@@ -30,7 +30,7 @@ A website that allows users to add their workouts and track their progress.
 >
 >[Common Features](#common-features)
 >
->[Dashboard](#dashboard)
+>[Dashboard](#dashboards-section)
 >
 >[My Workouts](#my-workouts)
 >
@@ -48,7 +48,7 @@ A website that allows users to add their workouts and track their progress.
 >
 [Deployment](#deployment)
 >
-[Code Used from External Sources](#code-used-from-external-sources)
+[Code Used from External Sources](#external)
 >
 [Credits](#credits)
 
@@ -67,6 +67,8 @@ Users have the following goals:
 Site managers hae the following goals: 
 * build a database of workouts 
 * look at statistics of common exercises
+
+<a id="user-experience"></a>
 
 ## User Expereince 
 This section shows the considerations for each type of user that would use the website and the exeriences they would have.
@@ -154,7 +156,7 @@ The following frameworks are used in this project:
 * Google Fonts
 * Font Awesome
 * JQuery
-* JEST (if testing - REMOVE IF NOT)
+* JEST
 
 ## Features
 This section outlines the key features on each page. 
@@ -176,6 +178,8 @@ The footer is featured across all pages, and aims to:
 * provide links to common social media sites 
 
 <img src="assets/images/feature-footer.png">
+
+<a id="dashboards-section"></a>
 
 ### Dashboard
 The dashboard page as two key sections which cover a number of features:
