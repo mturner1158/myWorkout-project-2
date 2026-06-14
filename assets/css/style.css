@@ -143,6 +143,10 @@ h1 {
     color: var(--secondary-colour);
 }
 
+label {
+        font-size: x-small;
+}
+
 #workout-table {
     width: 100%;
     border-collapse: collapse;
@@ -242,6 +246,13 @@ h1 {
 
 
 /* media queries */
+
+@media screen and (min-width: 576px) {
+    label {
+        font-size:medium;
+}
+
+}
 /* media queries for tablets or larger (768px or up) */
 
 @media screen and (min-width: 768px) {
