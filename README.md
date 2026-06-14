@@ -209,13 +209,14 @@ These tests are broken down into 7 describe blocks which cover the following:
 
 |ID|Describe Block|Tests   |
 |:-----|:-------|:-------------|
-|1|getFormValues()|<ul><li>take form inputs correctly</li><li>trim the form inputs</li><li>returns an empty string when there are no inputs</li></ul>|
-|2|isValid()||
-|3|||
-|4|||
-|5|||
-|6|||
-|7|||
+|1|getFormValues()|<ul><li>Takes form inputs correctly</li><li>Trims whitespace from inputs</li><li>Returns empty strings when fields are blank</li></ul>|
+|2|isValid()|<ul><li>Returns truthy when all three fields are populated</li><li>Returns falsy when exercise is missing</li><li>Returns falsy when weight is missing</li><li>Returns falsy when reps is missing</li><li>Returns falsy when all fields are empty</li></ul>|
+|3|addTableRow()|<ul><li>Returns a tr element</li><li>Renders exercise, weight, and reps in the correct cells</li><li>Includes a remove button with the btn-danger class</li></ul>|
+|4|Form submit event|<ul><li>Adds a row to the table on valid submission</li><li>Makes the table visible on first valid submission</li><li>Resets all form fields after submission</li><li>Does not add a row when fields are empty</li><li>Accumulates multiple rows correctly across repeated submissions</li></ul>|
+|5|Row remove button|<ul><li>Removes the correct row when the trash button is clicked</li><li>Re-hides the table when the last row is removed</li><li>Only removes the targeted row leaving other rows intact</li></ul>|
+|6|Overall submit button|<ul><li>Shows a success alert when at least one exercise exists</li><li>Replaces the table with the success message on submit</li><li>Does not show a success message when the table is empty</li><li>Increments all four counters on submission</li><li>Does not increment counters when the table is empty</li></ul>|
+|7|increaseCount()|<ul><li>Increments an elements text content by 1</li><li>Correctly increments from 0</li></ul>|
+|8|Reset button|<ul><li>Restores the original table structure after a successful submit</li><li>Restored table has the invisible class with no leftover rows</li><li>Removes the success alert on reset</li></ul>|
 
 
 
@@ -226,14 +227,13 @@ The following bugs occured during the design of this site:
 |ID|Bug|Fix   |
 |:-----|:-------|:-------------|
 |1|Table was not spaced properly on first page|Changed table width to 100%|
-|2|Form spacing would not work |STILL NEED TO FIX|
+|2|Form spacing would not work |Amended the bootstrap columns to ensure the plus fits on all screen sizes|
 |3|Could not right align home page on a large screen|Container classes were not implemented correctly and have now been changed|
 |4|Date was undefined on My Workouts page|Typo in call for date|
-|5|Footer would not stick to the bottom of the page|STILL NEED TO FIX|
-|6|On success the table to collect the form entries would not reappear|Added in a new function to add the code for the invisible table after clicking reset|
-|7|Didnt add multiple objects to the recordings|Wokrouts were stored in an array|
-|8|Upon clicking reset, you could not submit another form|Table and Tbody constants became functions that store values at the page load|
-|9|Padding did not get added horizontally for history cards|INtriduced a separate div for the cards on the histroy page|
+|5|On success the table to collect the form entries would not reappear|Added in a new function to add the code for the invisible table after clicking reset|
+|6|Didnt add multiple objects to the recordings|Wokrouts were stored in an array|
+|7|Upon clicking reset, you could not submit another form|Table and Tbody constants became functions that store values at the page load|
+|8|Padding did not get added horizontally for history cards|INtriduced a separate div for the cards on the histroy page|
 
 ## Deployment
 This website is deployed using GitHub Pages by using the following method: 
