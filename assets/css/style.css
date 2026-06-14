@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
+* Browsers: last 4 version
+*/
+
 
 /* google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
@@ -48,7 +55,8 @@ h1 {
 
 #navbar {
     font-family: var(--secondary-font);
-    box-shadow: 0 2px 4px 0 grey;
+    -webkit-box-shadow: 0 2px 4px 0 grey;
+            box-shadow: 0 2px 4px 0 grey;
     background-color: var(--secondary-colour);
 }
 
@@ -72,7 +80,8 @@ h1 {
 
 #footer {
     background-color:  var(--secondary-colour);
-    box-shadow: 0 -2px 4px 0 grey;
+    -webkit-box-shadow: 0 -2px 4px 0 grey;
+            box-shadow: 0 -2px 4px 0 grey;
     height: 2.5rem;
     padding-top: 10px;
 }
@@ -272,13 +281,6 @@ label {
 /* media queries for laptops (1200px or up) */
 @media screen and (min-width: 1200px) {
     
-}
-
-/* test styles - TO BE DELETED */
-
-.test {
-    background-color: blueviolet;
-    border: 1px solid red;
 }
 
 
