@@ -1,9 +1,57 @@
 # Project 2: MyWokrout
 A website that allows users to add their workouts and track their progress. 
 
+<img src="assets/images/header-image.png">
+
 ## Table of Contents 
 
-(links to add)
+[Project Goals](#project-goals)
+> [User Goals](#user-goals)
+>
+> [Site Goals](#site-goals)
+>
+[User Experience](#user-experience)
+>
+>[Target Audience](#target-audience)
+>
+>[Expectations](#expectations)
+>
+>[User Stories](#user-stories)
+>
+[Design](#design)
+>
+>[Fonts, Colours & Structure](#colours)
+>
+>[Wireframes](#wireframes)
+>
+[Frameworks & Languages](#frameworks)
+>
+[Features](#features)
+>
+>[Common Features](#common-features)
+>
+>[Dashboard](#dashboard)
+>
+>[My Workouts](#my-workouts)
+>
+[Testing](#testing)
+>
+>[User Story Testing](#user-story-testing)
+>
+>[HTML Testing](#html)
+>
+>[CSS Testing](#css)
+>
+>[Javascript Testing](#javascript)
+>
+[Bugs](#bugs)
+>
+[Deployment](#deployment)
+>
+[Code Used from External Sources](#code-used-from-external-sources)
+>
+[Credits](#credits)
+
 
 ## Project Goals
 This web application allows a user to track their workouts that they would undertake at the gym and track their progress. A user can use the dashboard page to input their workout and submit this to be added to their statistics. 
@@ -54,6 +102,8 @@ This user should expect to:
 ## Design
 This section shows the design choices I made as part of the design of this website, alongside wireframes to show the rough layout of each page before construction of the website.
 
+<a id="colours"></a>
+
 ### Fonts, Colours and Structure
 The colour theme of this site is as follows:
 
@@ -85,6 +135,8 @@ This section shows the wireframes for each page created in this website, across 
 #### History
 
 <img src="assets/images/wireframe-history.png">
+
+<a id="frameworks"></a>
 
 ## Frameworks & Languages
 This section highlights all the langauges and frameworks used in this seciton.
@@ -176,7 +228,9 @@ This satisfies User 1.
 
 <img src="assets/images/feature-workout-submit.png">
 
-### History
+<a id="my-workouts"></a>
+
+### My Workouts
 The history page has one main feature:
 
 #### Feature 5: Historic Workouts
@@ -193,6 +247,8 @@ This satisfies User 2.
 
 ## Testing
 I have tested the HTML, CSS and Javascript used within this project using a variety of tools. Each section will explain how this is done. 
+
+<a id="user-story-testing"></a>
 
 ### User Story Testing
 Each of the following user stories outlined at the bgeinning of this document are covered here: 
@@ -213,7 +269,6 @@ Using the [HTML Validator](https://validator.w3.org/), I received no errors for 
 Using the [Autofixer](https://autoprefixer.github.io/), I have ensured my CSS is complient with all browser types. 
 
 Using the [CSS Validator](https://jigsaw.w3.org/css-validator/), I have o recorded errors and 31 warnings due to the variables not statically checked. 
-
 
 ### JavaScript
 In this document, I have two Javascript files to provide code for each of my web pages. For index.html, I used the test testing framework to ensure this was working, as well as manual testing. For myworkouts.html, I manually tested this as I did not deem automated testing necessary for the simplier code. 
@@ -261,8 +316,12 @@ This website is deployed using GitHub Pages by using the following method:
 5. For branch, choose main
 6. After the webpage refreshes, the ribbon will say "Your site is live at https://mturner1158.github.io/myWorkout-project-2/"
 
+<a id="external"></a>
+
 ## Code from External Sources
 All code in this project is my own. I have used Claude Sonnet 4.6 to help troubleshoot Jest testing. 
+
+<a id="credits"></a>
 
 ## Credits and Disclaimer
 I have the following credits and disclaimers: 
