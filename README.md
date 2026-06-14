@@ -204,9 +204,9 @@ Each of the following user stories outlined at the bgeinning of this document ar
 Using the [HTML Validator](https://validator.w3.org/), I received the following outputs.
 
 ### CSS
-Using the [Autofixer](https://autoprefixer.github.io/), I have ...
+Using the [Autofixer](https://autoprefixer.github.io/), I have ensured my CSS is complient with all browser types. 
 
-Using the [CSS Validator](https://jigsaw.w3.org/css-validator/), I have  
+Using the [CSS Validator](https://jigsaw.w3.org/css-validator/), I have o recorded errors and 31 warnings due to the variables not statically checked. 
 
 
 ### JavaScript
