@@ -194,9 +194,20 @@ This satisfies User 2.
 ## Testing
 I have tested the HTML, CSS and Javascript used within this project using a variety of tools. Each section will explain how this is done. 
 
+### User Story Testing
+Each of the following user stories outlined at the bgeinning of this document are covered here: 
+
+|User|User Story|Testing   |
+|:-----|:-------|:-------------|
+
 ### HTML
+Using the [HTML Validator](https://validator.w3.org/), I received the following outputs.
 
 ### CSS
+Using the [Autofixer](https://autoprefixer.github.io/), I have ...
+
+Using the [CSS Validator](https://jigsaw.w3.org/css-validator/), I have  
+
 
 ### JavaScript
 In this document, I have two Javascript files to provide code for each of my web pages. For index.html, I used the test testing framework to ensure this was working, as well as manual testing. For myworkouts.html, I manually tested this as I did not deem automated testing necessary for the simplier code. 
@@ -245,5 +256,10 @@ This website is deployed using GitHub Pages by using the following method:
 6. After the webpage refreshes, the ribbon will say "Your site is live at https://mturner1158.github.io/myWorkout-project-2/"
 
 ## Code from External Sources
+All code in this project is my own. I have used Claude Sonnet 4.6 to help troubleshoot Jest testing. 
 
 ## Credits and Disclaimer
+I have the following credits and disclaimers: 
+
+* Thank you to my friends for helping to test application functionaltiy 
+* Credit to flaticon for the favicon 
