@@ -209,7 +209,7 @@ These tests are broken down into 7 describe blocks which cover the following:
 
 |ID|Describe Block|Tests   |
 |:-----|:-------|:-------------|
-|1|getFormValues()|* take form inputs correctly * trim the form inputs * returns an empty string when there are no inuts|
+|1|getFormValues()|<ul><li>take form inputs correctly</li><li>trim the form inputs</li><li>returns an empty string when there are no inputs</li></ul>|
 |2|isValid()||
 |3|||
 |4|||
