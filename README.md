@@ -192,6 +192,33 @@ This satisfies User 2.
 <img src="assets/images/feature-history-cards.png">
 
 ## Testing
+I have tested the HTML, CSS and Javascript used within this project using a variety of tools. Each section will explain how this is done. 
+
+### HTML
+
+### CSS
+
+### JavaScript
+In this document, I have two Javascript files to provide code for each of my web pages. For index.html, I used the test testing framework to ensure this was working, as well as manual testing. For myworkouts.html, I manually tested this as I did not deem automated testing necessary for the simplier code. 
+
+For index.html, I ran 29 tests to ensure the functionality of my webpage. The outcome can be seen in the image below. 
+
+<img src="assets/images/jest-testing-outcome.png">
+
+These tests are broken down into 7 describe blocks which cover the following: 
+
+|ID|Describe Block|Tests   |
+|:-----|:-------|:-------------|
+|1|getFormValues()|* take form inputs correctly * trim the form inputs * returns an empty string when there are no inuts|
+|2|isValid()||
+|3|||
+|4|||
+|5|||
+|6|||
+|7|||
+
+
+
 
 ## Bugs
 The following bugs occured during the design of this site: 
