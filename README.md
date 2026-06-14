@@ -218,8 +218,7 @@ These tests are broken down into 7 describe blocks which cover the following:
 |7|increaseCount()|<ul><li>Increments an elements text content by 1</li><li>Correctly increments from 0</li></ul>|
 |8|Reset button|<ul><li>Restores the original table structure after a successful submit</li><li>Restored table has the invisible class with no leftover rows</li><li>Removes the success alert on reset</li></ul>|
 
-
-
+For myworkouts.html, upon page load, 15 workouts generate in date order based on the random generator made using JavaScript. 
 
 ## Bugs
 The following bugs occured during the design of this site: 
