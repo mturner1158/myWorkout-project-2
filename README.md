@@ -308,7 +308,7 @@ The following bugs occured during the design of this site:
 |5|On success the table to collect the form entries would not reappear|Added in a new function to add the code for the invisible table after clicking reset|
 |6|Didnt add multiple objects to the recordings|Wokrouts were stored in an array|
 |7|Upon clicking reset, you could not submit another form|Table and Tbody constants became functions that store values at the page load|
-|8|Padding did not get added horizontally for history cards|INtriduced a separate div for the cards on the histroy page|
+|8|Padding did not get added horizontally for history cards|Introduced a separate div for the cards on the histroy page|
 
 ## Deployment
 This website is deployed using GitHub Pages by using the following method: 
