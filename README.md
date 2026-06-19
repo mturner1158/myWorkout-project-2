@@ -101,7 +101,7 @@ This user should expect to:
 * Ordered an a navigatable way
 
 ## Design
-This section shows the design choices I made as part of the design of this website, alongside wireframes to show the rough layout of each page before construction of the website.
+This section shows the design choices I made as part of the design of this website, alongside wireframes to show the rough layout of each page before construction of the website. Through all these choices, I have considered the 5 planes of user experience to ensure a smooth and enjoyable experience for all users of the site. 
 
 <a id="colours"></a>
 
@@ -115,6 +115,8 @@ The colour theme of this site is as follows:
 |Blue Slate|#495867 |Secondary Colour|
 |Oxidised Iron|#B02E0C|Secondary Background Colour|
 |Yellow Green|#B0D50B|Secondary Background Colour|
+
+Using this [contrast evaluator](https://coolors.co/contrast-checker/495867-ece9ec), the two most paired colours have scores 6.06 (#495867 and #ECE9EC) and 6.94 (#495867 and #FAF9F6) respectively.
 
 There are two fonts used through this site:
 
