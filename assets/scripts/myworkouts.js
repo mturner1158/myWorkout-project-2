@@ -55,17 +55,17 @@ if (historyRow) {
       <table>
         <thead>
           <tr>
-            <th>Exercise</th>
-            <th>Weight (kg)</th>
-            <th>Reps</th>
+            <th><i class="fa-solid fa-dumbbell"></i> Exercise</th>
+            <th><i class="fa-solid fa-weight-hanging"></i> Weight (kg)</th>
+            <th><i class="fa-solid fa-clipboard"> Reps</th>
           </tr>
         </thead>
         <tbody>
           ${workout.Exercises.map(exercise => `
             <tr>
-              <td><i class="fa-solid fa-dumbbell"></i> ${exercise.Exercise}</td>
-              <td><i class="fa-solid fa-weight-hanging"></i> ${exercise.Weight}</td>
-              <td><i class="fa-solid fa-clipboard"> ${exercise.Reps}</td><th>
+              <td>${exercise.Exercise}</td>
+              <td>${exercise.Weight}</td>
+              <td>${exercise.Reps}</td><th>
             </tr>
           `).join('')}
         </tbody>
