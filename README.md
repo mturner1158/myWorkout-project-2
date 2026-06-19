@@ -276,7 +276,7 @@ Using the [Autofixer](https://autoprefixer.github.io/), I have ensured my CSS is
 Using the [CSS Validator](https://jigsaw.w3.org/css-validator/), I have no recorded errors and 31 warnings due to the variables not statically checked. 
 
 ### JavaScript
-In this document, I have two Javascript files to provide code for each of my web pages. For index.html, I used the JEST testing framework to ensure this was working, as well as manual testing. For myworkouts.html, I manually tested this as I did not deem automated testing necessary for the simplier code. 
+In this document, I have two Javascript files to provide code for each of my web pages. For index.html, I used the JEST testing framework to ensure this was working, as well as manual testing. I chose to use JEST for index.html, as their are multiple functions interacting to ensure the user has the expected functionality. This also allows me to check when alerts should appear for when users do not present all information required for submission. For myworkouts.html, I manually tested this as I did not deem automated testing necessary for the simplier code and the lack of cuntions. . 
 
 For index.html, I ran 29 tests to ensure the functionality of my webpage. The outcome can be seen in the image below. 
 
@@ -295,7 +295,7 @@ These tests are broken down into 7 describe blocks which cover the following:
 |7|increaseCount()|<ul><li>Increments an elements text content by 1</li><li>Correctly increments from 0</li></ul>|
 |8|Reset button|<ul><li>Restores the original table structure after a successful submit</li><li>Restored table has the invisible class with no leftover rows</li><li>Removes the success alert on reset</li></ul>|
 
-For myworkouts.html, upon page load, 15 workouts generate in date order based on the random generator made using JavaScript. 
+For myworkouts.html, upon page load, 15 workouts generate in date order based on the random generator made using JavaScript. This was expected and upon refresh the 15 workouts appear again with a different randomisation of the array and dates.  
 
 ## Bugs
 The following bugs occured during the design of this site: 
