@@ -57,7 +57,7 @@ if (historyRow) {
           <tr>
             <th><i class="fa-solid fa-dumbbell"></i> Exercise</th>
             <th><i class="fa-solid fa-weight-hanging"></i> Weight (kg)</th>
-            <th><i class="fa-solid fa-clipboard"> Reps</th>
+            <th><i class="fa-solid fa-clipboard"></i> Reps</th>
           </tr>
         </thead>
         <tbody>
@@ -65,7 +65,7 @@ if (historyRow) {
             <tr>
               <td>${exercise.Exercise}</td>
               <td>${exercise.Weight}</td>
-              <td>${exercise.Reps}</td><th>
+              <td>${exercise.Reps}</td>
             </tr>
           `).join('')}
         </tbody>
