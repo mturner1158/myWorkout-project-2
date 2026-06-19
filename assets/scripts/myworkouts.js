@@ -63,9 +63,9 @@ if (historyRow) {
         <tbody>
           ${workout.Exercises.map(exercise => `
             <tr>
-              <td>${exercise.Exercise}</td>
-              <td>${exercise.Weight}</td>
-              <td>${exercise.Reps}</td>
+              <td><i class="fa-solid fa-dumbbell"></i> ${exercise.Exercise}</td>
+              <td><i class="fa-solid fa-weight-hanging"></i> ${exercise.Weight}</td>
+              <td><i class="fa-solid fa-clipboard"> ${exercise.Reps}</td><th>
             </tr>
           `).join('')}
         </tbody>
