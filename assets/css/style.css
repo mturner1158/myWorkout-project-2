@@ -201,6 +201,10 @@ label {
     border-radius: 5px;
 }
 
+form {
+    margin-bottom: 10px;
+}
+
 
 /* my workouts page styles */
 

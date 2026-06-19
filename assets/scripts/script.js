@@ -77,7 +77,7 @@ function removeTableEntry(row) {
 function confirmTableSubmission() {
   const container = document.getElementById("submission-display");
   container.innerHTML = `
-        <div class="alert alert-success text-center" role="alert">
+        <div id="success-message" class="alert alert-success text-center" role="alert">
             <i class="fa-solid fa-circle-check me-2"></i>
             Workout logged successfully!
         </div>
