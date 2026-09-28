@@ -183,5 +183,6 @@ function init() {
 
 document.addEventListener("DOMContentLoaded", init);
 
-
-module.exports = { getFormValues, isValid, addTableRow, increaseCount, init };
+if (typeof module !== "undefined") {
+  module.exports = { getFormValues, isValid, addTableRow, increaseCount, init };
+}

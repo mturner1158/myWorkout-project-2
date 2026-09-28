@@ -1,4 +1,4 @@
-# Project 2: MyWokrout
+# Project 2: MyWorkout
 A website that allows users to add their workouts and track their progress. 
 
 <img src="assets/images/header-image.png">
@@ -64,7 +64,7 @@ Users have the following goals:
 * Track previous workouts they have submitted
 
 ### Site Goals
-Site managers hae the following goals: 
+Site managers have the following goals: 
 * build a database of workouts 
 * look at statistics of common exercises
 
