@@ -267,6 +267,16 @@ Each of the following user stories outlined at the beginning of this document ar
 |User 2|See previously submitted workouts|Using the My Workouts page, a user can see previous workouts|
 |User 2|Past workouts ordered in a navigatable way|Workouts on the My Workouts page follow the same design as the first page and are arranged in date order|
 
+### General Feature Testing
+General features are tested manually and recorded below: 
+
+|Feature|Test|Outcome|
+|:-----|:-------|:----|
+|Navigation Buttons|||
+|Social Media Buttons|||
+|404 page|||
+
+
 ### Lighthouse testing
 I used the developer lighthouse tool testing to ensure my website is loading efficiently, is accessable, follows best practice and has is optimised via search engines. The following scoring is shown below and is 95 or higher in all categories. 
 
