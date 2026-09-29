@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 — Page Not Found</title>
 
-    <!-- favicon from freepik on flaticon-->
-    <link rel="icon" href="/MyWorkout/assets/images/favicon.png">
+    <!-- favicon -->
+    <link rel="icon" href="/myWorkout-project-2/assets/images/favicon.png">
+
+    <!-- css -->
+    <link rel="stylesheet" href="/myWorkout-project-2/assets/css/style.css">
 
     <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <!-- custom css -->
-    <link rel="stylesheet" href="/MyWorkout/assets/css/style.css">
 </head>
 
 <body>
@@ -28,12 +29,22 @@
             It may have been moved, deleted, or the URL may be incorrect.
         </p>
 
+        <p id="redirect-message">
+            Redirecting you to the home page in
+            <span id="countdown" aria-live="polite">10</span> seconds...
+        </p>
+
         <div class="actions">
-            <button class="secondary" type="button" onclick="history.back()">
+            <button class="secondary" type="button" id="back-button">
                 Go back
+            </button>
+            <a class="btn btn-primary" href="/myWorkout-project-2/">Go home now</a>
+            <button class="secondary" type="button" id="cancel-redirect">
+                Stay on this page
             </button>
         </div>
     </main>
+
 </body>
 
 </html>
