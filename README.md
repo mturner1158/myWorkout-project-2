@@ -70,8 +70,8 @@ Site managers have the following goals:
 
 <a id="user-experience"></a>
 
-## User Expereince 
-This section shows the considerations for each type of user that would use the website and the exeriences they would have.
+## User Experience 
+This section shows the considerations for each type of user that would use the website and the experiences they would have.
 
 ### Target Audience
 The target audience is any user that wants to track their workouts over a period of time. 
@@ -88,7 +88,7 @@ The following user stories have been considered:
 
 | ID | User | User Story | Acceptance Criteria |
 | --- | --- | --- | --- |
-| 1 | User logging workouts | <ul><li>I would like to add each exercise of my workout with its weight and reps so that I can record everything I did in a single session.</li><li>I would like to submit my exercises so that my workout is saved as complete.</li><li>I would like to see confirmation of my workout submission so that I know it was recorded successfully.</li><li>I would like to view how many workouts I have done over different time periods so that I can monitor my consistency and stay motivated.</li></ul> | <ul><li>Use the form to input one or more exercsies</li><li>A clear button to submti the form once complete</li><li>A success message appears on submisison</li><li>Clear tiles at the top of the homepage with differing timeframes and update on submission</li></ul>|
+| 1 | User logging workouts | <ul><li>I would like to add each exercise of my workout with its weight and reps so that I can record everything I did in a single session.</li><li>I would like to submit my exercises so that my workout is saved as complete.</li><li>I would like to see confirmation of my workout submission so that I know it was recorded successfully.</li><li>I would like to view how many workouts I have done over different time periods so that I can monitor my consistency and stay motivated.</li></ul> | <ul><li>Use the form to input one or more exercises</li><li>A clear button to submit the form once complete</li><li>A success message appears on submission</li><li>Clear tiles at the top of the homepage with differing timeframes and update on submission</li></ul>|
 | 2 | User tracking workouts | <ul><li>I would like to see my previously submitted workouts so that I can review what I have done in the past.</li><li>I would like to see my workouts ordered in a navigable way so that I can quickly find a specific workout and see my progress over time.</li></ul> | <ul><li>View previous workouts in a clear format</li><li>Workout cards are ordered by date so I can quickly go back in time to find the correct workout</li></ul> |
 
 ## Design
@@ -112,7 +112,7 @@ Using this [contrast evaluator](https://coolors.co/contrast-checker/495867-ece9e
 There are two fonts used through this site:
 
 1. Hind is the primary font used for main bodies of text
-2. Monserrat is the secondary font and is used for headers and important bits of text
+2. Montserrat is the secondary font and is used for headers and important bits of text
 
 The site will have an easy to follow structure with a standardised navigation bar across all pages to allow users to find the information they need. This web application consists of two pages.
 
@@ -133,7 +133,7 @@ This section shows the wireframes for each page created in this website, across 
 <a id="frameworks"></a>
 
 ## Frameworks & Languages
-This section highlights all the langauges and frameworks used in this seciton.
+This section highlights all the languages and frameworks used in this section.
 
 The following languages are used in this project:
 
@@ -144,16 +144,16 @@ The following languages are used in this project:
 The following frameworks are used in this project: 
 
 * Bootstrap v5.3.8
-* Github
+* GitHub
 * Google Fonts
 * Font Awesome
-* JEST
+* Jest
 
 ## Features
 This section outlines the key features on each page. 
 
 ### Common Features
-Common features across all pages on this site include the navigate bar and the footer. 
+Common features across all pages on this site include the navigation bar and the footer. 
 
 #### Navigation Bar
 The navigation bar is featured on all pages, and aims to:
@@ -173,11 +173,11 @@ The footer is featured across all pages, and aims to:
 <a id="dashboards-section"></a>
 
 ### Dashboard
-The dashboard page as two key sections which cover a number of features:
+The dashboard page has two key sections which cover a number of features:
 
 #### Feature 1: Workout Counting
 **What this does:**
-This feature shows the number of workouts that would currently be logged on the website in the last week, last month, last year and all time. In this case, the orignal numbers when the page loads are hard coded as there is no back end storage for this site.
+This feature shows the number of workouts that would currently be logged on the website in the last week, last month, last year and all time. In this case, the original numbers when the page loads are hard coded as there is no back end storage for this site.
 
 **How it works:** 
 Once a user inputs a workout using features 2-4, the data is logged as an object and an iteration calculation updates each number. 
@@ -201,7 +201,7 @@ This satisfies User 1.
 
 #### Feature 3: Workout Logging
 **What this does:**
-This features shows the data which the user has already submitted. The user can add as many rows as they please. If a user has made an error, they can use the red icon in the remove column to remove the row and reinput the correct information using the form again. 
+This feature shows the data which the user has already submitted. The user can add as many rows as they please. If a user has made an error, they can use the red icon in the remove column to remove the row and reinput the correct information using the form again. 
 
 **How it works:** 
 This uses Javascript functions to add an event listener to record when the red remove icon is clicked to remove a row or when the form submission icon is clicked to add the row.
@@ -216,7 +216,7 @@ This satisfies User 1.
 This feature takes all the rows of the table and creates an object with the submission date and the inputted information. This also increases the counts in Feature 1. Once submitted, a success message appears to asure users that this is recorded. Users can then use the reset button to submit another workout. 
 
 **How it works:** 
-This users a mixture of event listeners and functions to ensure the object is logged. Functions ensure this can be reset and multiple workotus can be submitted as objects and the count can keep increasing. 
+This uses a mixture of event listeners and functions to ensure the object is logged. Functions ensure this can be reset and multiple workouts can be submitted as objects and the count can keep increasing. 
 
 **User Stories:**
 This satisfies User 1. 
@@ -230,7 +230,7 @@ The 'My Workouts' page has one main feature:
 
 #### Feature 5: Historic Workouts
 **What this does:**
-Displays past workouts. In this case, the workouts are randomly generated with a date from 1st January 2024 to present day from a list of 10 exercises as there is no back end storage. These are ordered fom most recent to least recent.
+Displays past workouts. In this case, the workouts are randomly generated with a date from 1st January 2024 to present day from a list of 10 exercises as there is no back end storage. These are ordered from most recent to least recent.
 
 **How it works:** 
 Using a script, we generate 15 objects containing a randomised date, 5 exercises with weight and reps for each. Then we generate a card for each object and add these to the DOM to be displayed for the user. 
@@ -255,14 +255,14 @@ Each of the following user stories outlined at the beginning of this document ar
 |User 1|See confirmation of their workout submission|Upon clicking the 'submit your workout' button, a success message should appear and an error pop up if you have not added any exercises|
 |User 1|View how many workouts they have done over different time periods|The workout history at the top of the page provides numbers that update as you submit more workouts|
 |User 2|See previously submitted workouts|Using the My Workouts page, a user can see previous workouts|
-|User 2|Past workouts ordered in a navigatable way|Workouts on the My Workouts page follow the same design as the first page and are arranged in date order|
+|User 2|Past workouts ordered in a navigable way|Workouts on the My Workouts page follow the same design as the first page and are arranged in date order|
 
 ### General Feature Testing
 General features are tested manually and recorded below: 
 
 |Feature|Test|Outcome|
 |:-----|:-------|:----|
-|Navigation Buttons|When selecting dashboard you are taken to the dashbaord page and when selecting my workouts you are taken to the My History page|Pass|
+|Navigation Buttons|When selecting dashboard you are taken to the dashboard page and when selecting my workouts you are taken to the My History page|Pass|
 |Social Media Buttons|When selecting a social media icon, a new tab opens to the home page of that social media|Pass|
 |404 page|When you type in an invalid url, you are shown an error and redirected automatically to another page|Pass|
 
@@ -273,7 +273,7 @@ The application is developed using responsive design and changes layout dependin
 
 
 ### Lighthouse testing
-I used the developer lighthouse tool testing to ensure my website is loading efficiently, is accessable, follows best practice and has is optimised via search engines. The following scoring is shown below and is 95 or higher in all categories. 
+I used the developer lighthouse tool testing to ensure my website is loading efficiently, is accessable, follows best practice and is optimised via search engines searching. The following scoring is shown below and is 95 or higher in all categories. 
 
 <img src="assets/images/lighthouse-1.png">
 
@@ -283,7 +283,7 @@ I used the developer lighthouse tool testing to ensure my website is loading eff
 
 
 ### HTML
-Using the [HTML Validator](https://validator.w3.org/), I received no errors for index.html and one warning in myworkouts.html. This warning is due to headings not being in a correct heirachy but this code is generated by javascript.
+Using the [HTML Validator](https://validator.w3.org/), I received no errors for index.html and one warning in myworkouts.html. This warning is due to headings not being in a correct hierachy but this code is generated by javascript.
 
 For index.html:
 <img src="assets/images/html-testing-1.png">
@@ -295,14 +295,14 @@ For 404.html:
 <img src="assets/images/html-testing-3.png">
 
 ### CSS
-Using the [Autofixer](https://autoprefixer.github.io/), I have ensured my CSS is complient with all browser types. 
+Using the [Autoprefixer](https://autoprefixer.github.io/), I have ensured my CSS is compliant with all browser types. 
 
 Using the [CSS Validator](https://jigsaw.w3.org/css-validator/), I have no recorded errors and 31 warnings due to the variables not statically checked. 
 
 <img src="assets/images/css-testing.png">
 
 ### JavaScript
-In this document, I have two Javascript files to provide code for each of my web pages. For index.html, I used the JEST testing framework to ensure this was working, as well as manual testing. I chose to use JEST for index.html, as their are multiple functions interacting to ensure the user has the expected functionality. This also allows me to check when alerts should appear for when users do not present all information required for submission. For myworkouts.html, I manually tested this as I did not deem automated testing necessary for the simplier code and the lack of cuntions. . 
+In this document, I have three Javascript files to provide code for each of my web pages. For index.html, I used the JEST testing framework to ensure this was working, as well as manual testing. I chose to use JEST for index.html, as there are multiple functions interacting to ensure the user has the expected functionality. This also allows me to check when alerts should appear for when users do not present all information required for submission. For myworkouts.html, I manually tested this as I did not deem automated testing necessary for the simpler code and the lack of functions.
 
 For index.html, I ran 29 tests to ensure the functionality of my webpage. The outcome can be seen in the image below. 
 
@@ -318,12 +318,12 @@ These tests are broken down into 7 describe blocks which cover the following:
 |4|Form submit event|<ul><li>Adds a row to the table on valid submission</li><li>Makes the table visible on first valid submission</li><li>Resets all form fields after submission</li><li>Does not add a row when fields are empty</li><li>Accumulates multiple rows correctly across repeated submissions</li></ul>|
 |5|Row remove button|<ul><li>Removes the correct row when the trash button is clicked</li><li>Re-hides the table when the last row is removed</li><li>Only removes the targeted row leaving other rows intact</li></ul>|
 |6|Overall submit button|<ul><li>Shows a success alert when at least one exercise exists</li><li>Replaces the table with the success message on submit</li><li>Does not show a success message when the table is empty</li><li>Increments all four counters on submission</li><li>Does not increment counters when the table is empty</li></ul>|
-|7|increaseCount()|<ul><li>Increments an elements text content by 1</li><li>Correctly increments from 0</li></ul>|
+|7|increaseCount()|<ul><li>Increments an element's text content by 1</li><li>Correctly increments from 0</li></ul>|
 |8|Reset button|<ul><li>Restores the original table structure after a successful submit</li><li>Restored table has the invisible class with no leftover rows</li><li>Removes the success alert on reset</li></ul>|
 
 For myworkouts.html, upon page load, 15 workouts generate in date order based on the random generator made using JavaScript. This was expected and upon refresh the 15 workouts appear again with a different randomisation of the array and dates. 
 
-I have also ran a JS validator which returned no errors for my script files.
+I have also run a JS validator which returned no errors for my script files.
 
 For script.js:
 <img src="assets/images/js-test-1.png">
@@ -331,8 +331,12 @@ For script.js:
 For myworkouts.js:
 <img src="assets/images/js-test-2.png">
 
+For 404.html: 
+
+<img src="assets/images/js-test-3.png">
+
 ## Bugs
-The following bugs occured during the design of this site: 
+The following bugs occurred during the design of this site: 
 
 |ID|Bug|Fix   |
 |:-----|:-------|:-------------|
@@ -340,17 +344,18 @@ The following bugs occured during the design of this site:
 |2|Form spacing would not work |Amended the bootstrap columns to ensure the plus fits on all screen sizes|
 |3|Date was undefined on My Workouts page|Typo in call for date|
 |4|On success the table to collect the form entries would not reappear|Added in a new function to add the code for the invisible table after clicking reset|
-|5|Didnt add multiple objects to the recordings|Workouts were stored in an array|
+|5|Didn't add multiple objects to the recordings|Workouts were stored in an array|
 |6|Upon clicking reset, you could not submit another form|Table and Tbody constants became functions that store values at the page load|
-|7|Padding did not get added horizontally for history cards|Introduced a separate div for the cards on the histroy page|
+|7|Padding did not get added horizontally for history cards|Introduced a separate div for the cards on the history page|
 
 ## Deployment
+The following steps can be taken to deploy this project as your own.
 
 ### Cloning the Repository 
 To take your own version of this repository, you will have to use the following steps: 
 
-1. Select the fork buttn in the top right corner of the repository and add to your own 
-2. Clone the reposiotry using the green 'Code' button 
+1. Select the fork button in the top right corner of the repository and add to your own 
+2. Clone the repository using the green 'Code' button 
 3. Copy the repository URL to your clipboard
 4. Open your terminal and run: git clone [REPOSITORY URL] 
 5. Change into the project directory 
@@ -376,12 +381,14 @@ This project uses [Jest](https://jestjs.io/) to test the JavaScript functions. A
 <a id="external"></a>
 
 ## Code from External Sources
-All code in this project is my own. I have used Claude Sonnet 4.6 to help troubleshoot Jest testing. 
+All code in this project is my own. 
+
+I have used Claude Sonnet 4.6 to help troubleshoot Jest testing due to install not occuring properly and course teachers not being available. There were also DOM related errors which I could not find the solution to which were resolved through guidance on Stack Overflow and Claude Sonnet 4.6.
 
 <a id="credits"></a>
 
 ## Credits and Disclaimer
 I have the following credits and disclaimers: 
 
-* Thank you to my friends for helping to test application functionaltiy 
+* Thank you to my friends for helping to test application functionality
 * Credit to flaticon for the favicon 
