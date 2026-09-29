@@ -272,9 +272,9 @@ General features are tested manually and recorded below:
 
 |Feature|Test|Outcome|
 |:-----|:-------|:----|
-|Navigation Buttons|||
-|Social Media Buttons|||
-|404 page|||
+|Navigation Buttons|When selecting dashboard you are taken to the dashbaord page and when selecting my workouts you are taken to the My History page|Pass|
+|Social Media Buttons|When selecting a social media icon, a new tab opens to the home page of that social media|Pass|
+|404 page|When you type in an invalid url, you are shown an error and redirected automatically to another page|Pass|
 
 
 ### Lighthouse testing
