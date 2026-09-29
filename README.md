@@ -326,9 +326,11 @@ For myworkouts.html, upon page load, 15 workouts generate in date order based on
 I have also run a JS validator which returned no errors for my script files.
 
 For script.js:
+
 <img src="assets/images/js-test-1.png">
 
 For myworkouts.js:
+
 <img src="assets/images/js-test-2.png">
 
 For 404.html: 
