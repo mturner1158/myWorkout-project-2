@@ -297,6 +297,10 @@ body {
   text-align: center;
 }
 
+#404-header {
+  text-align: center;
+}
+
 .code {
   font-size: clamp(6rem, 20vw, 10rem);
   line-height: 0.9;
