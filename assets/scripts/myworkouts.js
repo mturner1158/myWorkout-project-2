@@ -10,8 +10,6 @@ const workoutHistoryTbody = document.querySelector('.workout-history-card tbody'
 // Loop through the exercises and build a row for each
 const historyRow = document.querySelector('#workout-history-display .row');
 
-
-
 // function to generate a random date
 
 function randomDate(start, end) {
@@ -35,8 +33,6 @@ const generatedWorkouts = Array.from({ length: 15 }, (_, i) => ({
 }))
 .sort((a, b) => new Date(b.Date.split('/').reverse().join('-')) - new Date(a.Date.split('/').reverse().join('-')))
 .map((workout, i) => ({ ...workout, Workout: i + 1 }));
-
-console.log(generatedWorkouts);
 
 // generates cards based on the carrer which was generated in the previous constants
 
