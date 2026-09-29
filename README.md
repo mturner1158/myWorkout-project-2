@@ -86,19 +86,10 @@ Users of the site can expect:
 ### User Stories
 The following user stories have been considered:
 
-**User 1: Workout Logging**
-This user should expect to: 
-
-* Add each exercise of their workout
-* Submit their exercises
-* See confirmation of their workout submission
-* View how many workouts they have done over different time periods
-
-**User 2: Workout Tracking**
-This user should expect to:
-
-* See previously submitted workouts
-* Ordered an a navigatable way
+| ID | User | User Story | Acceptance Criteria |
+| --- | --- | --- | --- |
+| 1 | User logging workouts | <ul><li>I would like to add each exercise of my workout with its weight and reps so that I can record everything I did in a single session.</li><li>I would like to submit my exercises so that my workout is saved as complete.</li><li>I would like to see confirmation of my workout submission so that I know it was recorded successfully.</li><li>I would like to view how many workouts I have done over different time periods so that I can monitor my consistency and stay motivated.</li></ul> | <ul><li>Use the form to input one or more exercsies</li><li>A clear button to submti the form once complete</li><li>A success message appears on submisison</li><li>Clear tiles at the top of the homepage with differing timeframes and update on submission</li></ul>|
+| 2 | User tracking workouts | <ul><li>I would like to see my previously submitted workouts so that I can review what I have done in the past.</li><li>I would like to see my workouts ordered in a navigable way so that I can quickly find a specific workout and see my progress over time.</li></ul> | <ul><li>View previous workouts in a clear format</li><li>Workout cards are ordered by date so I can quickly go back in time to find the correct workout</li></ul> |
 
 ## Design
 This section shows the design choices I made as part of the design of this website, alongside wireframes to show the rough layout of each page before construction of the website. Through all these choices, I have considered the 5 planes of user experience to ensure a smooth and enjoyable experience for all users of the site. 
@@ -354,6 +345,19 @@ The following bugs occured during the design of this site:
 |7|Padding did not get added horizontally for history cards|Introduced a separate div for the cards on the histroy page|
 
 ## Deployment
+
+### Cloning the Repository 
+To take your own version of this repository, you will have to use the following steps: 
+
+1. Select the fork buttn in the top right corner of the repository and add to your own 
+2. Clone the reposiotry using the green 'Code' button 
+3. Copy the repository URL to your clipboard
+4. Open your terminal and run: git clone [REPOSITORY URL] 
+5. Change into the project directory 
+
+This should mean you have a local copy of the repository to edit. 
+
+### Deploying to GitHub Pages
 This website is deployed using GitHub Pages by using the following method: 
 
 1. Open up the github repository
@@ -362,6 +366,12 @@ This website is deployed using GitHub Pages by using the following method:
 4. For the source choose 'deploy from branch'
 5. For branch, choose main
 6. After the webpage refreshes, the ribbon will say "Your site is live at https://mturner1158.github.io/myWorkout-project-2/"
+
+### Running Jest Testing
+This project uses [Jest](https://jestjs.io/) to test the JavaScript functions. Assuming you have already cloned the repository, please follow these steps:
+
+1. Run npm install. This uses the package.json file 
+2. Run npm test. This will generate a read out showing which tests passed and which failed for furthe inspection.
 
 <a id="external"></a>
 
