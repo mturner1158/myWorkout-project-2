@@ -94,15 +94,15 @@
                 <div class="row g-2">
                   <div class="col-4">
                     <label for="exercise" class="form-label"><i class="fa-solid fa-dumbbell"></i> Exercise</label>
-                    <input type="text" class="form-control" name="exercise" id="exercise" placeholder="e.g. bench press">
+                    <input type="text" class="form-control" name="exercise" id="exercise" placeholder="e.g. bench press" required>
                   </div>
                   <div class="col-3">
                     <label for="weight" class="form-label"><i class="fa-solid fa-weight-hanging"></i> Weight (kg)</label>
-                    <input type="number" class="form-control" name="weight" id="weight" placeholder="0">
+                    <input type="number" class="form-control" name="weight" id="weight" placeholder="0" min="0.01" step="any" required>
                   </div>
                   <div class="col-3">
                     <label for="reps" class="form-label"><i class="fa-solid fa-clipboard"></i> Reps</label>
-                    <input type="number" class="form-control" name="reps" id="reps" placeholder="0">
+                    <input type="number" class="form-control" name="reps" id="reps" placeholder="0" min="1" step="1" required>
                   </div>
                   <div class="col-2 d-flex align-items-end pb-1">
                     <button type="submit" class="btn add-exercise-btn" aria-label="add-exercise-button">
@@ -110,7 +110,6 @@
                     </button>
                   </div>
                 </div>
-                <!-- remove link for form submission -->
               </form>
               <div id="submission-display">
                 <table id="workout-table" class="mt-3 invisible">

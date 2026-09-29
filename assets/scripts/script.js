@@ -43,16 +43,23 @@ function isValid({ exercise, weight, reps }) {
 
 function addTableRow({ exercise, weight, reps }) {
   const row = document.createElement("tr");
-  row.innerHTML = `
-        <td>${exercise}</td>
-        <td>${weight}</td>
-        <td>${reps}</td>
-        <td>
-            <button class="btn btn-sm btn-danger remove-row">
-                <i class="fa-solid fa-trash"></i>
-            </button>
-        </td>
-    `;
+
+  // textContent treats the value as plain text, never as HTML
+  [exercise, weight, reps].forEach((value) => {
+    const td = document.createElement("td");
+    td.textContent = value;
+    row.appendChild(td);
+  });
+
+  // The delete button is static markup with no user data, so innerHTML is safe here
+  const actionCell = document.createElement("td");
+  actionCell.innerHTML = `
+    <button class="btn btn-sm btn-danger remove-row">
+      <i class="fa-solid fa-trash"></i>
+    </button>
+  `;
+  row.appendChild(actionCell);
+
   return row;
 }
 
