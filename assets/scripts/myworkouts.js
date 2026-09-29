@@ -4,9 +4,6 @@ const exercises = [
   "Deadlift", "Shoulder Press", "Bent-Over Row", "Biceps Curl", "Triceps Dip"
 ];
 
-// Select the tbody inside the div
-const workoutHistoryTbody = document.querySelector('.workout-history-card tbody');
-
 // Loop through the exercises and build a row for each
 const historyRow = document.querySelector('#workout-history-display .row');
 

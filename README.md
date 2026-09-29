@@ -156,7 +156,6 @@ The following frameworks are used in this project:
 * Github
 * Google Fonts
 * Font Awesome
-* JQuery
 * JEST
 
 ## Features
