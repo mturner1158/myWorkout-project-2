@@ -385,7 +385,7 @@ This project uses [Jest](https://jestjs.io/) to test the JavaScript functions. A
 ## Code from External Sources
 All core coding in this project is my own. 
 
-Commit d49d67b implements changes guided by Yassin Hassin of Brigton Met which are documented in [changes.md][./changes.md].
+Commit d49d67b implements changes guided by Yassin Hassin of Brigton Met which are documented in (changes.md)[./changes.md].
 
 I have used Claude Sonnet 4.6 to help troubleshoot Jest testing due to install not occuring properly and course teachers not being available. There were also DOM related errors which I could not find the solution to which were resolved through guidance on Stack Overflow and Claude Sonnet 4.6.
 
