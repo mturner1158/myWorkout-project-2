@@ -29,11 +29,17 @@ function getFormValues(form) {
 }
 
 /*
- * returns the three form input fields appended
+ * checks all three inputs to the submission form are valid
+ * checking for exercising being a string of non-zero length 
+ * checking weight is a finite number and not an empty value 
+ * checking reps is a non-empty value and a positive integer
  */
 
 function isValid({ exercise, weight, reps }) {
-  return exercise && weight && reps;
+  return typeof exercise === "string" && exercise.trim().length > 0 &&
+    exercise.length <= 100 && String(weight).trim() !== "" &&
+    Number.isFinite(Number(weight)) && Number(weight) >= 0 &&
+    String(reps).trim() !== "" && Number.isSafeInteger(Number(reps)) && Number(reps) > 0;
 }
 
 /*
@@ -44,22 +50,22 @@ function isValid({ exercise, weight, reps }) {
 function addTableRow({ exercise, weight, reps }) {
   const row = document.createElement("tr");
 
-  // textContent treats the value as plain text, never as HTML
+  // create table row using form va;ues
   [exercise, weight, reps].forEach((value) => {
     const td = document.createElement("td");
     td.textContent = value;
     row.appendChild(td);
   });
 
-  // The delete button is static markup with no user data, so innerHTML is safe here
-  const actionCell = document.createElement("td");
-  actionCell.innerHTML = `
-    <button class="btn btn-sm btn-danger remove-row">
-      <i class="fa-solid fa-trash"></i>
-    </button>
-  `;
-  row.appendChild(actionCell);
-
+  // The delete button to remove a table row
+  const cell = document.createElement("td");
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "btn btn-sm btn-danger remove-row";
+  button.setAttribute("aria-label", "Remove " + exercise);
+  button.textContent = "Remove";
+  cell.appendChild(button);594
+  row.appendChild(cell);
   return row;
 }
 

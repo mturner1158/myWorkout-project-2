@@ -153,11 +153,11 @@ h1 {
 }
 
 label {
-  font-size: x-small;
+  font-size: 14px;
 }
 
 th {
-  font-size: xx-small;
+  font-size: 12px;
 }
 
 #workout-table {
@@ -268,13 +268,7 @@ form {
   margin: 0 0 12px;
 }
 
- * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
+.error-body {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -282,14 +276,6 @@ body {
   padding: 24px;
   background: #f7f7f8;
   color: #18181b;
-  font-family:
-    Inter,
-    ui-sans-serif,
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    sans-serif;
 }
 
 .error {
@@ -310,19 +296,11 @@ body {
   user-select: none;
 }
 
-h1 {
+.error-h1 {
   margin-top: 24px;
   font-size: clamp(1.75rem, 5vw, 2.5rem);
   line-height: 1.1;
   letter-spacing: -0.04em;
-}
-
-p {
-  margin: 14px auto 0;
-  max-width: 420px;
-  color: #71717a;
-  font-size: 1rem;
-  line-height: 1.6;
 }
 
 .actions {
@@ -333,8 +311,8 @@ p {
   flex-wrap: wrap;
 }
 
-a,
-button {
+.error-a,
+.error-button {
   border: 0;
   border-radius: 10px;
   padding: 11px 18px;
@@ -360,11 +338,6 @@ button {
   border: 1px solid #e4e4e7;
 }
 
-a:hover,
-button:hover {
-  transform: translateY(-1px);
-}
-
 .primary:hover {
   background: #27272a;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
@@ -372,12 +345,6 @@ button:hover {
 
 .secondary:hover {
   background: #fafafa;
-}
-
-a:focus-visible,
-button:focus-visible {
-  outline: 3px solid #a1a1aa;
-  outline-offset: 3px;
 }
 
 /* media queries */

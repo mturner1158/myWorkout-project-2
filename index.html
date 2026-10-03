@@ -25,7 +25,7 @@
 
 <body class="d-flex flex-column min-vh-100">
   <!-- Navbar begins with bootstrap and modified to suit site -->
-  <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark">
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
     <div class="container">
       <a id="logo" class="navbar-brand" href="index.html">MyWorkout</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -46,7 +46,7 @@
   </nav>
 
   <!-- main section -->
-  <main class="flex-grow-1">
+  <main id="main-content" class="flex-grow-1" tabindex="-1">
     <section id="workouts" class="container">
       <div class="row g-2">
         <div class="col-12 count-section">
@@ -88,24 +88,24 @@
         <div class="col-12">
           <div class="submission-section">
             <div class="workout-tile">
-              <h1 class="h4">Log a workout</h1>
-              <p>Fill in an exercise and hit + to add it to your session</p>
+              <h2 class="h4">Log a workout</h2>
+              <p>Fill in an exercise and hit + to add it to your session. For bodyweight exercises, please enter 0 kg.</p>
               <form method="POST" id="new-workout-form" class="w-100">
                 <div class="row g-2">
                   <div class="col-4">
                     <label for="exercise" class="form-label"><i class="fa-solid fa-dumbbell"></i> Exercise</label>
-                    <input type="text" class="form-control" name="exercise" id="exercise" placeholder="e.g. bench press" required>
+                    <input type="text" class="form-control" name="exercise" id="exercise" maxlength="100" placeholder="e.g. bench press" required>
                   </div>
                   <div class="col-3">
                     <label for="weight" class="form-label"><i class="fa-solid fa-weight-hanging"></i> Weight (kg)</label>
-                    <input type="number" class="form-control" name="weight" id="weight" placeholder="0" min="0.01" step="any" required>
+                    <input type="number" class="form-control" name="weight" id="weight" placeholder="0" min="0.00" step="any" required>
                   </div>
                   <div class="col-3">
                     <label for="reps" class="form-label"><i class="fa-solid fa-clipboard"></i> Reps</label>
                     <input type="number" class="form-control" name="reps" id="reps" placeholder="0" min="1" step="1" required>
                   </div>
                   <div class="col-2 d-flex align-items-end pb-1">
-                    <button type="submit" class="btn add-exercise-btn" aria-label="add-exercise-button">
+                    <button type="submit" class="btn add-exercise-btn" aria-label="add exercose to this histroy">
                       <i class="fa-solid fa-plus" id="submit-exercise"></i>
                     </button>
                   </div>
@@ -148,10 +148,10 @@
         <!-- link to social media sites -->
         <div id="socials" class="col text-end">
           <p>
-            <a href="https://facebook.com" target="_blank" aria-label="facebook"><i class="fa-brands fa-square-facebook"></i></a>
-            <a href="https://instagram.com" target="_blank" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://twitter.com" target="_blank" aria-label="twitter"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://www.tiktok.com" target="_blank" aria-label="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="facebook"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.tiktok.com" target="_blank"  rel="noopener noreferrer" aria-label="tiktok"><i class="fa-brands fa-tiktok"></i></a>
           </p>
         </div>
       </div>

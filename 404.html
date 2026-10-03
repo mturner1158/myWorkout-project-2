@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Error page which redirects after 10 seconds">
+    <meta name="description" content="Page not found">
     <title>404 — Page Not Found</title>
 
     <!-- favicon -->
@@ -22,7 +22,7 @@
 
 </head>
 
-<body>
+<body class="error-body">
     <main class="error">
         <div class="code" aria-hidden="true">404</div>
 
@@ -33,19 +33,11 @@
             It may have been moved, deleted, or the URL may be incorrect.
         </p>
 
-        <p id="redirect-message">
-            Redirecting you to the home page in
-            <span id="countdown" aria-live="polite">10</span> seconds...
-        </p>
-
         <div class="actions">
-            <button class="secondary" type="button" id="back-button">
+            <button class="secondary error-button" type="button" id="back-button">
                 Go back
             </button>
-            <a class="btn btn-primary" href="/myWorkout-project-2/">Go home now</a>
-            <button class="secondary" type="button" id="cancel-redirect">
-                Stay on this page
-            </button>
+            <a class="btn btn-primary error-a" href="/myWorkout-project-2/">Go Home</a>
         </div>
     </main>
 
